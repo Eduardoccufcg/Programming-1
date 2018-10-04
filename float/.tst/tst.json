@@ -1,0 +1,18 @@
+{
+  "files": {
+    "float.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: uma nova s\u00e9rie com float\n\nfor i in range(8,208,1):\n    print i / 2.0\n   \n",
+      "name": "float.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 4,\n      \"vhalstead\": 4.75,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "337d1a5aa996ceab89c870d689741533",
+  "iid": 6457427906002944,
+  "activity_revision": "1.1.1"
+}

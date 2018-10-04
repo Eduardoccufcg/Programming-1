@@ -1,0 +1,18 @@
+{
+  "files": {
+    "palavrasdobra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Palavra dobradas\n\nn = int(raw_input())\ndobradas = []\nnao_dobradas = []\nfor i in range(n):\n\tpalavra = raw_input()\n\ttem_letras_dobradas = False\n\tfor j in range(1,len(palavra)):\n\t\tletra = palavra[j]\n\t\tanterior = palavra[j-1]\n\t\tif letra == anterior:\n\t\t\ttem_letras_dobradas = True\n\t\t\tdobradas.append(palavra)\n\t\t\tbreak\n\t\t\n\tif tem_letras_dobradas == False:\n\t\tnao_dobradas.append(palavra)\n\t\nprint '%d palavra(s) com letras dobradas:' % len(dobradas)\nfor i in dobradas:\n\tprint i\nprint'---'\nprint '%d palavra(s) sem letras dobradas:' % len(nao_dobradas)\nfor e in  nao_dobradas:\n\tprint e\t\n\n",
+      "name": "palavrasdobra.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 41.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "89034cdc4c055340e342486e832f2ca4",
+  "iid": 6098967116906496,
+  "activity_revision": "1.1.1"
+}

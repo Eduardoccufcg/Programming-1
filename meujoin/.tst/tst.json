@@ -1,0 +1,18 @@
+{
+  "files": {
+    "meujoin.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Meu Join\n\n\ndef meu_join(delimitador,lista):\n\tstring = ''\n\tfor i in range(len(lista)):\n\t\tif i +1 != len(lista):\n\t\t\tstring += lista[i] + delimitador\n\t\telse:\n\t\t\tstring += lista[i]\n\treturn string\n",
+      "name": "meujoin.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmeu_join = getattr(undertest, 'meu_join', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert meu_join(\"*\", \"abc\") == \"a*b*c\"\n\n   def test_exemplo1(self):\n     assert meu_join(\"*\", [\"a\", \"b\", \"c\"]) == \"a*b*c\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "216ae0b4e5efa6da529c322822817774",
+  "iid": 5793892167319552,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "roleta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Roleta\n\nnumero_aposta = int(raw_input())\ncor_aposta = raw_input()\nnumero_sorteado = int(raw_input())\ncor_sorteado = raw_input()\npontos = 0\nif numero_aposta == numero_sorteado and cor_aposta == cor_sorteado:\n\tpontos = 150\nelif numero_aposta == numero_sorteado and cor_aposta != cor_sorteado:\n\tpontos = 100\nelif cor_aposta == cor_sorteado and numero_aposta != numero_sorteado and numero_sorteado > numero_aposta:\n\tpontos = 80\nelif cor_aposta == cor_sorteado and numero_aposta != numero_sorteado and numero_sorteado < numero_aposta:\n\tpontos = 100\nprint pontos\n",
+      "name": "roleta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 69.76,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ac22b8ce657231eda9568d88e129a9e4",
+  "iid": 5782705924997120,
+  "activity_revision": "1.0.1"
+}

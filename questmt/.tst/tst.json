@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nseleciona_questoes = getattr(undertest, 'seleciona_questoes', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        todas = [1, 2, 3, 4, 5]\n        utilizadas = [3, 4]\n        seleciona_questoes(todas, utilizadas)\n        assert todas == [1, 2, 5]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "questmt.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: quest\u00f5es para mt\n\ndef seleciona_questoes(todas,utilizadas):\n\tfor d in range(len(utilizadas)):\n\t\tfor e in range(len(todas)-1,-1,-1):\n\t\t\tif utilizadas[d] == todas[e]:\n\t\t\t\ttodas.pop(e)\n\ntodas = [1, 2, 3, 4, 5]\nutilizadas = [3, 4]\nseleciona_questoes(todas, utilizadas)\nassert todas == [1, 2, 5]\n",
+      "name": "questmt.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a8f0978eca17e40b6389d0d6040f1571",
+  "iid": 5835363297787904,
+  "activity_revision": "1.0.0"
+}

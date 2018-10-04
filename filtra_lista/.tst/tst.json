@@ -1,0 +1,19 @@
+{
+  "files": {
+    "filtra_lista.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Filtrando Elementos em uma Lista\n\n\ndef filtra_lista(num, lista):\n\tlista_nova = []\n\tfor i in range(len(lista)):\n\t\tif i % num == 0:\n\t\t\tlista_nova.append(lista[i])\n\treturn lista_nova\n\t\t\t\nlista1 = [0,1,2,3,4,5,6]\nlista2 = [2,3,5,7,11,13,17]\nassert filtra_lista(2, lista1) == [0,2,4,6]\nassert filtra_lista(3, lista1) == [0,3,6]\nassert filtra_lista(4, lista2) == [2,11]\nassert filtra_lista(40, lista2) == [2]\t\t\t\n",
+      "name": "filtra_lista.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_lista = getattr(undertest, 'filtra_lista', None)\n\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_1(self):\n        lista1 = range(10)\n        assert filtra_lista(2, lista1) == [0,2,4,6,8]\n        assert filtra_lista(3, lista1) == [0,3,6,9]\n        assert lista1 == range(10)\n\n    def test_2(self):\n        lista2 = [2,3,5,7,11,13,17]\n        assert filtra_lista(4, lista2) == [2,11]\n        assert filtra_lista(40, lista2) == [2]\n        assert lista2 == [2,3,5,7,11,13,17]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ab3f2fcb5b4676384422b588dbf82202",
+  "iid": 5872219485896704,
+  "activity_revision": "6.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "consoantes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Mais consoantes\n\nvogais = 0\nconsoantes = 0\npalavras_lidas = 0\nwhile True:\n\tpalavra = raw_input()\n\tpalavras_lidas += 1\n\tfor i in palavra:\n\t\tif i in 'AEIOUaeiou':\n\t\t\tvogais += 1\n\t\telse:\n\t\t\tconsoantes += 1\n\tif consoantes > vogais:\n\t\tbreak\n\tvogais = 0\n\tconsoantes = 0\n\t\nprint palavras_lidas\n\n",
+      "name": "consoantes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 16,\n      \"vhalstead\": 257.47,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a1c5ca71753c07ce8efead7e9de37fba",
+  "iid": 5025906447876096,
+  "activity_revision": "1.0.1"
+}

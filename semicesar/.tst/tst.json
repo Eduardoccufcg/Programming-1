@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncesar = getattr(undertest, 'cesar', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert cesar(\"exemplo\", 4) == \"ibiqtps\"\n    \n    def test_exemplo_2(self):\n        assert cesar(\"Exemplo 2!\", 4) == \"Ebiqtps 2!\"\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "semicesar.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Semi C\u00e9sar\n\ndef cesar(msg , d):\n\tpalavra = ''\n\talfabeto = 'abcdefghijklmnopqrstuvwxyz'\n\tfor elemento in msg:\n\t\tteste = 0\n\t\tfor i in range(len(alfabeto)):\n\t\t\tif elemento == alfabeto[i]:\n\t\t\t\tteste += 1\n\t\t\t\tif i + d < len(alfabeto) - 1:\n\t\t\t\t\tpalavra += alfabeto[i+d]\n\t\t\t\telse:\n\t\t\t\t\tpalavra += alfabeto[i + d - len(alfabeto)]\n\t\tif teste == 0:\n\t\t\tpalavra += elemento\n\treturn palavra\n",
+      "name": "semicesar.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b15dc60dd10f39979f7b175772c1bef9",
+  "iid": 5896140037816320,
+  "activity_revision": "1.0.0"
+}

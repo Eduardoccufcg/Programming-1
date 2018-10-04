@@ -1,0 +1,14 @@
+{
+  "files": {
+    "abaixomedia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Abaixo da m\u00e9dia\nn_numeros = 0\nsoma = 0\nlista_numeros = []\nwhile True:\n\tnumeros = raw_input()\n\tif numeros == 'fim':\n\t\tbreak\n\t\t\n\telse:\n\t\tlista_numeros.append(numeros)\n\t\tn_numeros += 1\n\t\tsoma += float(numeros)\n\t\t\n\tmedia = soma / n_numeros\n\t\nprint'%.2f' % media\n\nfor i in range(len(lista_numeros)):\n\tif float(lista_numeros[i]) < media:\n\t\tprint i+1 , lista_numeros[i]\n",
+      "name": "abaixomedia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0c2db234ae26fc1c1949868084218c43",
+  "iid": 5304191270518784,
+  "activity_revision": "1.0.1"
+}

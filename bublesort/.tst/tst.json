@@ -1,0 +1,19 @@
+{
+  "files": {
+    "buble.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Bublesort\n\n\ndef bubblesort(dados):\n\tfor d in range(len(dados)):\n\t\ttroca = False\n\t\tfor i in range(0,len(dados) -1):\n\t\t\tif dados[i] > dados[i+1]:\n\t\t\t\tdados[i],dados[i+1] = dados[i+1], dados[i]\n\t\t\t\ttroca = True\n\t\tif not troca:\n\t\t\tbreak\n\n",
+      "name": "buble.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbubblesort = getattr(undertest, 'bubblesort', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        lista = [3,9,1,2]\n        bubblesort(lista)\n        assert lista == [1,2,3,9]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9b53c96c09a0322d721778e94e255591",
+  "iid": 5771806908612608,
+  "activity_revision": "1.0.0"
+}

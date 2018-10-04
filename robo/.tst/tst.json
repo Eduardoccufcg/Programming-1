@@ -1,0 +1,18 @@
+{
+  "files": {
+    "robo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Karel, o rob\u00f4\n\nx = 0\ny = 0\n\nwhile True:\n\tcoordenada = raw_input().split()\n\tif coordenada[1] == '0':\n\t\tprint'Fim de jogo'\n\t\tbreak\n\tif coordenada[0] == 'B':\n\t\ty += int(coordenada[1]) * (-1)\n\tif coordenada[0] == 'E':\n\t\tx += int(coordenada[1]) * (-1)\n\tif coordenada[0] == 'C':\n\t\ty += int(coordenada[1])\n\tif coordenada[0] == 'D':\n\t\tx += int(coordenada[1])\n\tif abs(y) == 2 * abs(x) and x!=0 and y!=0:\n\t\tprint'Parab\u00e9ns, conquista do portal (%d, %d)' % (x,y)\n\t\tbreak\n\n",
+      "name": "robo.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 225.72,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c88214e3c4418fff5b3808f60116a312",
+  "iid": 5906776591433728,
+  "activity_revision": "1.0.1"
+}

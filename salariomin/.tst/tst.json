@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 20,\n      \"vhalstead\": 250.77,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "salariominimo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: An\u00e1lise de Varia\u00e7\u00e3o do Sal\u00e1rio M\u00ednimo\n\nano_inicial = int(raw_input())\nano_final = int(raw_input())\nsalario_base = 100.00\nanos = 0 \nlista_salario = []\n\nfor salario in range(ano_inicial,ano_final+1):\n\tsalario_minimo = float(raw_input())\n\tanos += 1\n\tlista_salario.append(salario_minimo)\nabaixo = 0\nacima = 0\nsoma_abaixo = 0\nsoma_acima = 0\nfor i in lista_salario:\n\tif i < salario_base:\n\t\tabaixo += 1\n\t\tsoma_abaixo += i\n\telse:\n\t\tacima += 1\n\t\tsoma_acima += i\n\nprint'%d ano(s) abaixo (%0.f%% dos anos)' % (abaixo, abaixo * 100.0 / anos)\t\t\nif abaixo != 0:\n\tprint'm\u00e9dia dos anos abaixo: U$ %.2f' % (soma_abaixo / abaixo)\nprint'%d ano(s) acima (%0.f%% dos anos)' % (acima, acima * 100.0 / anos)\t\t\t\nif acima != 0:\n\tprint'm\u00e9dia dos anos acima: U$ %.2f' % (soma_acima / acima)\n\n\t\n\n\t\n",
+      "name": "salariominimo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "04d81113fc7740b84b21e29d67b0196a",
+  "iid": 4969742234288128,
+  "activity_revision": "1.1.2"
+}

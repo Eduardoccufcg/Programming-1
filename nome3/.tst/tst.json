@@ -1,0 +1,14 @@
+{
+  "files": {
+    "nome.py": {
+      "category": "answer",
+      "data": "print 'Dalton'\nprint 'Dalton'\nprint 'Dalton'\n",
+      "name": "nome.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9da1d1e696f6f7d8493de7bcf6a1aea7",
+  "iid": 4729930965319680,
+  "activity_revision": "1.2.0"
+}

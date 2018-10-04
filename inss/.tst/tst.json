@@ -1,0 +1,18 @@
+{
+  "files": {
+    "inss.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Custo INSS\n\nsalario = float(raw_input())\n\ninss_empregador = salario * 0.12\ninss_empregado_8 = salario * 0.08\ninss_empregado_9 = salario * 0.09\ninss_empregado_11 = salario * 0.11\n\nif salario <= 1317.07:\n\tprint 'O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregador \u00e9 de R$ %.2f' % inss_empregador\n\tprint 'O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregado \u00e9 de R$ %.2f' % inss_empregado_8\n\nelif salario >= 1317.08 and salario <= 2195.12:\n\tprint 'O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregador \u00e9 de R$ %.2f' % inss_empregador\n\tprint 'O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregado \u00e9 de R$ %.2f' % inss_empregado_9\n\t\nelse:\n\tprint 'O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregador \u00e9 de R$ %.2f' % inss_empregador\n\tprint 'O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregado \u00e9 de R$ %.2f' % inss_empregado_11\n\t\n\t\n",
+      "name": "inss.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 2,\n      \"lloc\": 10,\n      \"vhalstead\": 93.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "09c66cb380175e9f80fc5345c10244f4",
+  "iid": 5731544207458304,
+  "activity_revision": "1.0.5"
+}

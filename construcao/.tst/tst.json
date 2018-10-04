@@ -1,0 +1,14 @@
+{
+  "files": {
+    "construcao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\nlargura_terreno = float(raw_input())\ncomprimento_terreno = float(raw_input())\narea_1_casa = float(raw_input())\narea_terreno = float((largura_terreno * comprimento_terreno) / area_1_casa)\n\nprint'%d casa(s) pode(m) ser constru\u00edda(s) no terreno.' % int(area_terreno)\n",
+      "name": "construcao.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "76d6253bc813ea62452e6952822ebaf3",
+  "iid": 4860458267836416,
+  "activity_revision": "1.1.0"
+}

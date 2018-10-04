@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classico.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: cl\u00e1ssico dos maiorais\n# Programa\u00e7\u00e3o 1 / 2017.2\nn_gols_campinense = int(raw_input())\nn_gols_treze = int(raw_input())\n\nif n_gols_campinense < n_gols_treze:\n\tprint 'Treze'\nelif n_gols_campinense > n_gols_treze:\n\tprint 'Campinense'\nelse:\n\tprint 'Empate'\n\n\n\t\n\t\t\n\t\n\t\n",
+      "name": "classico.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 9.51,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8e45244f7f7a578b303b369caf623aeb",
+  "iid": 5030794120658944,
+  "activity_revision": "1.1.1"
+}

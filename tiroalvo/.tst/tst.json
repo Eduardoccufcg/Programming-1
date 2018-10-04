@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 112.59,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "tiroalvo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Tiro ao alvo\n\nsoma = 0\nimport math\ny1 = 0.0\nx1 = 0.0\nlista = []\nwhile True:\n\tentrada = raw_input().split(',')\n\n\tx2 = float(entrada[0])\n\ty2 = float(entrada[1])\n\tdistancia = math.sqrt((x2 - x1) ** 2 + (y2 -y1) ** 2)\n\tif distancia <= 200.0:\n\t\tsoma += distancia\n\t\tlista.append(distancia)\n\t\tprint'%.2f' % distancia\n\tif distancia > 200.0:\n\t\tbreak\n\tx2 = x1\n\ty2 = y1\n\n\t\nprint'--'\nprint'num disparos: %d' % len(lista)\nprint 'distancia media: %.2f' % (soma / len(lista) )\n\t\n\n",
+      "name": "tiroalvo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "efc83dcc8f04bb963fefe2ce98c9d000",
+  "iid": 5801368698748928,
+  "activity_revision": "1.0.3"
+}

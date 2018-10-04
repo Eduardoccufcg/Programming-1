@@ -1,0 +1,14 @@
+{
+  "files": {
+    "limiteacude.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Limite a\u00e7ude\n\nlimite_superior = float(raw_input())\nnivel_atual = float(raw_input())\n\nnivel = nivel_atual\ndemanda = 0\nwhile True:\n\tif nivel >= limite_superior:\n\t\tbreak\n\tentrada = raw_input().split()\n\tif entrada[0] == 'afluente':\n\t\tnivel += float(entrada[1])\n\tif entrada[0] == 'chuva':\n\t\tnivel += float(entrada[1])\n\tif entrada[0] == 'demanda':\n\t\tif nivel >= float(entrada[1]):\n\t\t\tnivel += float(entrada[1]) * (-1)\n\t\t\n\nif nivel >= limite_superior:\n\tprint'A\u00e7ude passou a liberar \u00e1gua.'\nprint'N\u00edvel: %.2f' % nivel\n",
+      "name": "limiteacude.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3a2714d04d8a00ac2cc4cdbb6d25366d",
+  "iid": 5225607931625472,
+  "activity_revision": "1.0.1"
+}

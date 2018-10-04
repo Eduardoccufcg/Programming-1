@@ -1,0 +1,18 @@
+{
+  "files": {
+    "samu.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Atendimento no Samu\n\nsoma_atendimentos = 0\nlista_atendimentos = []\nfor m in range(12):\n\tn_atendimentos_mes = int(raw_input())\n\tlista_atendimentos.append(n_atendimentos_mes)\n\tsoma_atendimentos += n_atendimentos_mes\n\nmedia_mensal = soma_atendimentos / 12.0\nprint'M\u00e9dia mensal de atendimentos: %.2f' % media_mensal\nprint'----'\n\nfor d in range(len(lista_atendimentos)):\n\tif lista_atendimentos[d] > media_mensal:\n\t\tprint 'M\u00eas %d: %d' % (d+1,lista_atendimentos[d])\n\t\n",
+      "name": "samu.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7e30af3360c732c3ada7a3c08a272d0a",
+  "iid": 5061010289328128,
+  "activity_revision": "1.1.1"
+}

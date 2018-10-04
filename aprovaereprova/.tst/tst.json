@@ -1,0 +1,18 @@
+{
+  "files": {
+    "questao1.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Aprovados e Reprovados\n\n#coding utf -8\nn_alunos = int(raw_input())\nreprovados = 0\naprovados = 0\nsoma_aprovados = 0\nsoma_reprovados = 0\nlista_alunos = []\nfor n in range(n_alunos):\n\tnotas_alunos = raw_input()\n\tlista_alunos.append(notas_alunos)\n\t\nfor i in range(len(lista_alunos)):\n\tif float(lista_alunos[i]) >= 7.0:\n\t\tsoma_aprovados += float(lista_alunos[i])\n\t\taprovados += 1\n\telse:\n\t\tsoma_reprovados += float(lista_alunos[i])\n\t\treprovados += 1\n\t\t\t\n\t\t\t\nprint'Reprovados: %d' % reprovados\nif reprovados != 0:\n\tprint 'M\u00e9dia: %.1f' % (soma_reprovados / (reprovados))\nprint\t\t\t\nprint'Aprovados: %d' % aprovados\nif aprovados != 0:\n\tprint 'M\u00e9dia: %.1f' % (soma_aprovados / (aprovados))\n",
+      "name": "questao1.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 165.67,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9f98c12d16ef608f6249cd14e870be71",
+  "iid": 5057478685360128,
+  "activity_revision": "1.0.2"
+}

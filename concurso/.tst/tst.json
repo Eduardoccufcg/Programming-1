@@ -1,0 +1,18 @@
+{
+  "files": {
+    "concurso.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Concurso\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\n\nnota_1_candidato_1 = float(raw_input())\nnota_2_candidato_1 = float(raw_input())\nnota_3_candidato_1 = float(raw_input())\nidade_candidato_1 = int(raw_input())\n\nnota_1_candidato_2 = float(raw_input())\nnota_2_candidato_2 = float(raw_input())\nnota_3_candidato_2 = float(raw_input())\nidade_candidato_2 = int(raw_input())\n\nmedia_candidato_1 = (nota_1_candidato_1 * 0.3) + (nota_2_candidato_1 * 0.4) + (nota_3_candidato_1 * 0.3)\nmedia_candidato_2 = (nota_1_candidato_2 * 0.3) + (nota_2_candidato_2 * 0.4) + (nota_3_candidato_2 * 0.3)\n\nif media_candidato_1 > media_candidato_2 or media_candidato_1 == media_candidato_2 and idade_candidato_1 > idade_candidato_2:\n\tprint'O primeiro candidato foi aprovado com m\u00e9dia %.1f.' % media_candidato_1\nelif media_candidato_1 < media_candidato_2 or media_candidato_1 == media_candidato_2 and idade_candidato_1 < idade_candidato_2:\n\tprint'O segundo candidato foi aprovado com m\u00e9dia %.1f.' % media_candidato_2\nelse: \n\tprint'Empate.'\n\t\t\n",
+      "name": "concurso.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 262.33,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "72fe2ecc11fa0197a6983939d94cdd6c",
+  "iid": 5304177781637120,
+  "activity_revision": "1.0.2"
+}

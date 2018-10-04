@@ -1,0 +1,18 @@
+{
+  "files": {
+    "seqdna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: sequencia de DNA\n\nseq1 = raw_input()\nseq2 = raw_input()\ncontador_iguais = 0\nfor i in range(len(seq1)):\n\tif seq1[i] == seq2[i]:\n\t\tcontador_iguais += 1\nif contador_iguais <= len(seq1) / 2:\n\tprint 'nao'\nelse:\n\tprint'sim'\n",
+      "name": "seqdna.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 1,\n      \"lloc\": 10,\n      \"vhalstead\": 41.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1a4463403bab74ef64503ef7dc9b8667",
+  "iid": 5054784734232576,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agendaordenada.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Agenda Ordenada\n\n\ndef agenda_ordena(dados,nome):\n\tlista_agenda = []\n\tfor d in range(len(dados)):\n\t\ttroca = False\n\t\tfor i in range(0,len(dados) -1):\n\t\t\tif dados[i] > dados[i+1]:\n\t\t\t\tdados[i],dados[i+1] = dados[i+1], dados[i]\n\t\t\t\ttroca = True\n\t\tif not troca:\n\t\t\tbreak\n\tfor i in dados:\n\t\tif i == nome:\n\t\t\tlista_agenda.append('* %s' % nome)\n\t\telse:\n\t\t\tlista_agenda.append(i)\n\treturn lista_agenda\n\nlista = []\nwhile True:\n\tnome = raw_input()\n\tif nome == '####':\n\t\tbreak\n\tlista.append(nome)\n\tfor d in agenda_ordena(lista,nome):\n\t\tprint d\n\tprint'----'\n",
+      "name": "agendaordenada.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "975e8e80e8cec6d022f9e6ddc50c9c7f",
+  "iid": 5874900216578048,
+  "activity_revision": "1.0.0"
+}

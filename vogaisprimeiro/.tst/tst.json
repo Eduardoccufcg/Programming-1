@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nvogais_primeiro = getattr(undertest, 'vogais_primeiro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert vogais_primeiro(\"exemplo\") == \"eeoxmpl\"\n    \n    def test_exemplo_2(self):\n        assert vogais_primeiro(\"Programacao 1\") == \"oaaaoPrgrmc 1\"\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "vogaisprimeiro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Vogais Primeiro\n\ndef vogais_primeiro(palavra):\n\tpalavranova = ''\n\tpalavranova2 = ''\n\tfor i in palavra:\n\t\tif i in 'AEIOUaeiou':\n\t\t\tpalavranova += i\n\t\telse:\t\n\t\t\tpalavranova2 += i\n\treturn palavranova + palavranova2\n\t\n",
+      "name": "vogaisprimeiro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "edb2f141b43fabbd55d8c800780dd7c5",
+  "iid": 6100180579385344,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "equacoes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Corrigindo Equa\u00e7\u00f5es\nimport math\ncoeficiente_a = int(raw_input())\ncoeficiente_b = int(raw_input())\ncoeficiente_c = int(raw_input())\n\ndelta = coeficiente_b ** 2 - 4 * coeficiente_a * coeficiente_c\n\n\nif delta > 0:\n\tx2 = (-coeficiente_b - math.sqrt(delta)) / (2 * coeficiente_a)\n\tx1 = (-coeficiente_b + math.sqrt(delta)) / (2 * coeficiente_a)\n\tprint'x1 = %.2f' % x1\n\tprint'x2 = %.2f' % x2\t\nelif delta == 0:\n\tx = (-coeficiente_b + math.sqrt(delta)) / (2 * coeficiente_a)\n\tprint'x = %.2f' % x\nelse:\n\tprint'sem raizes reais'\n\n\n",
+      "name": "equacoes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 245.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "318bf1d7c29f6c1ebab68774b9dbcf9e",
+  "iid": 5271691454316544,
+  "activity_revision": "1.1.2"
+}

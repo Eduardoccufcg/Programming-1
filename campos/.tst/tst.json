@@ -1,0 +1,14 @@
+{
+  "files": {
+    "campos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#C\u00e1lculo de Campos de Futebol\n# (C) 2017, Eduardo Pereira / UFCG, Programa\u00e7\u00e3o 1\nc1 = float(raw_input())\nc2 = float(raw_input())\nc3 = float(raw_input())\nm1 = float(c1/4000)\nm2 = float(c2/4000)\nm3 = float(c3/4000)\nmedia = (m1+m2+m3)/3\nprint '%.2f'% m1\nprint '%.2f'% m2\nprint '%.2f'% m3\nprint '%.2f'% media\n",
+      "name": "campos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3ae6116b576c74727c1c98be0fd5df2d",
+  "iid": 5868406293135360,
+  "activity_revision": "1.0.1"
+}

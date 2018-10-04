@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 4.75,\n      \"header\": 4\n    }\n  ]\n}"
+    },
+    "imprimevogal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Imprime Primeira vogal\n\nvogais = 'aeiouAEIOU'\npalavra = raw_input()\n\n\nlistapalavra = []\nfor i in palavra:\n\tif i in vogais:\n\t\tlistapalavra.append(i)\nif listapalavra != []:\n\tprint listapalavra[0]\nelse:\n\tprint \"-\"\n",
+      "name": "imprimevogal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6e535de112e311f525f18f25587077e8",
+  "iid": 5216274162384896,
+  "activity_revision": "1.1.3"
+}

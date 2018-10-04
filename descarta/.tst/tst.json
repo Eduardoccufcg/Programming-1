@@ -1,0 +1,18 @@
+{
+  "files": {
+    "descarta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Descarta facilmente\n\nn = int(raw_input())\ndescartados =[]\naceitos = []\nfor c in range(n):\n\tnumero = raw_input()\n\taceito = False\n\tfor i in range(len(numero)):\n\t\tif i == int(numero[i]):\n\t\t\taceito = True\n\t\t\tdescartados.append(numero)\n\t\t\tbreak\n\tif aceito == False:\n\t\taceitos.append(numero)\n\t\t\nprint'---'\nprint'%d aceito(s)' % len(aceitos)\nfor i in aceitos:\n\tprint i\t\t\t\nprint'%d descartado(s)' % len(descartados)\nfor d in descartados:\n\tprint d\n\n",
+      "name": "descarta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0704439c1c1882c5d79d79ac8e99a72c",
+  "iid": 5344083799179264,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "10ousoma.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: 10 ou soma 10\n\nnumero_1 = int(raw_input())\nnumero_2 = int(raw_input())\n\nif numero_1 == 10 or numero_2 == 10 or numero_1 + numero_2 == 10:\n\tprint'SIM'\nelse:\n\tprint'NAO'\n",
+      "name": "10ousoma.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 53.15,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d063bfd0d6447d705c5f7bb2f3200e30",
+  "iid": 5242871150018560,
+  "activity_revision": "1.0.2"
+}

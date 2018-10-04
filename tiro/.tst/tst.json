@@ -1,0 +1,18 @@
+{
+  "files": {
+    "tiro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Tiro ao alvo\nlista = []\nsoma = 0\nimport math\ny1 = 0.0\nx1 = 0.0\n\nwhile True:\n\tx2 = float(raw_input())\n\ty2 = float(raw_input())\n\tdistancia = math.sqrt((x2 - x1) ** 2 + (y2 -y1) ** 2)\n\tif distancia <= 200.0:\n\t\tsoma += distancia\n\t\tlista.append(distancia)\n\tif distancia > 200.0:\n\t\tbreak\n\tx2 = x1\n\ty2 = y1\n\nmelhor_tiro = lista[0]\n\nfor i in lista:\n\tif i <= melhor_tiro:\n\t\tmelhor_tiro = i\n\t\tprint'%.2f cm (melhor tiro)' % i\n\telse:\n\t\tprint'%.2f cm' % i\nprint'--'\nprint'num tiros: %d' % len(lista)\nprint'melhor tiro: %.2f cm' % melhor_tiro\nprint 'distancia media: %.2f cm' % (soma / len(lista))\n\t\n\n",
+      "name": "tiro.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 23,\n      \"vhalstead\": 176.42,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "81a1aee61827eb0e404b220d915ea9ab",
+  "iid": 5776781084721152,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "megatripla.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\nint_1 = int(raw_input())\nint_2 = int(raw_input())\nint_3 = int(raw_input())\n\nprint'%0.2d-%0.2d-%0.2d' % (int_1 % 11, int_2 % 11, int_3 % 11)\n",
+      "name": "megatripla.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8352752017f7d690690ab84432e9c805",
+  "iid": 5977682072305664,
+  "activity_revision": "1.0.0"
+}

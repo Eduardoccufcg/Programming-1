@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 2,\n      \"lloc\": 6,\n      \"vhalstead\": 49.83,\n      \"header\": 9\n    }\n  ]\n}"
+    },
+    "edoblo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: \u00c9 doblo?\n\nn1 = int(raw_input())\nn2 = int(raw_input())\n\nif n1 == 2 * n2 or n2 == n1 * 2:\n\tprint'SIM'\nelse:\n\tprint'NAO'\n",
+      "name": "edoblo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5ad961f4622b3d2b3bb9e724bfb627c4",
+  "iid": 5770521908084736,
+  "activity_revision": "1.0.3"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "guerra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Guerra Baralho\n\njogador1 = 0\njogador2 = 0\nempate = 0\nwhile True:\n\tentrada = raw_input().split()\n\tif entrada == ['0','0']:\n\t\tbreak\n\tif int(entrada[0]) > int(entrada[1]):\n\t\tjogador1 += 1\n\telif int(entrada[0]) < int(entrada[1]):\n\t\tjogador2 += 1\n\telse:\n\t\tempate += 1\n\nprint 'Jogador 1: %d, Jogador 2: %d, Empates: %d' % (jogador1, jogador2, empate)\n",
+      "name": "guerra.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 2,\n      \"lloc\": 13,\n      \"vhalstead\": 82.04,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f1171127354e0740f03f25fad946e35f",
+  "iid": 5791391758155776,
+  "activity_revision": "1.0.1"
+}

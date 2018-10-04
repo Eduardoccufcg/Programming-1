@@ -1,0 +1,18 @@
+{
+  "files": {
+    "conjuntos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Conjunto Maiores\n\nlista_indice = []\nlista_soma = []\nlimite = int(raw_input())\nn_conjuntos = int(raw_input())\nindice = 0\nsoma = 0\nwhile n_conjuntos != 0:\n\tnumero = int(raw_input())\n\tif numero < 0:\n\t\tlista_soma.append(soma)\n\t\tindice += 1\n\t\tlista_indice.append(indice)\n\t\tn_conjuntos -= 1\n\t\tsoma = 0\n\telse:\n\t\tsoma += numero\nfor i in range(len(lista_soma)):\n\tif lista_soma[i] > limite:\n\t\tprint'conjunto %d: %d' % (lista_indice[i],lista_soma[i])\t\n\t\n",
+      "name": "conjuntos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 14,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1819829d6466d4cc17a2f59ec20a2f74",
+  "iid": 5784934274826240,
+  "activity_revision": "1.0.1"
+}

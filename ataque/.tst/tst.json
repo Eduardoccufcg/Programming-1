@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 66.61,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "ataque.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Ataque mais positivo\n\nsomatorio = 0\ngols = 0\nmelhor_time = ''\n\nn_times = int(raw_input())\n\nfor i in range(n_times):\n\t\n\tnome_time = raw_input()\n\tgols_time = int(raw_input())\n\tsomatorio += gols_time   \n\tif gols_time > gols:\n\t\tgols -= gols\n\t\tgols += gols_time\n\t\tmelhor_time = ''\n\t\tmelhor_time += nome_time + '\\n'\n\telif gols_time == gols:\n\t\tgols -= gols\n\t\tgols += gols_time\n\t\tmelhor_time += nome_time + '\\n'\n   \n\nprint'Time(s) com melhor ataque (%d gol(s)):' % gols\nprint'%s' % melhor_time\nprint'M\u00e9dia de gols marcados: %.1f' % (somatorio / float(n_times))\n\n",
+      "name": "ataque.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e17ff899063885c9b138eb38ea3f2176",
+  "iid": 5866849501708288,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "corredor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Classifica Corredor\n\nquantidade_km = float(raw_input())\ntempo = float(raw_input())\nvelocidade_media = quantidade_km / tempo\n\nif velocidade_media < 10.0:\n\tprint 'Velocidade: %.1fkm/h. Corredor amador.' % velocidade_media\nelif 10.0 <= velocidade_media <= 15.0:\n\tprint 'Velocidade: %.1fkm/h. Corredor aspirante.' % velocidade_media\nelse:\n\tprint 'Velocidade: %.1fkm/h. Corredor profissional.' % velocidade_media\n",
+      "name": "corredor.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 41.51,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a4548321ddee37a36ce6e758d8a07fdb",
+  "iid": 6406581801451520,
+  "activity_revision": "1.0.6"
+}

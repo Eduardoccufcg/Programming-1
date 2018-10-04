@@ -1,0 +1,18 @@
+{
+  "files": {
+    "imprimeseq.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Imprime Sequencias\n\nnumero_alvo = int(raw_input())\ncontador = 0\ni = 0\nwhile True:\n\tentrada = raw_input()\n\ti += 1\n\tcontador = 0\t\n\tif entrada == 'fim':\n\t\tbreak\n\tentrada2 = entrada.split()\n\tfor d in entrada2:\n\t\tif int(d) > numero_alvo:\n\t\t\tcontador += 1\n\tif contador > len(entrada2) / 2:\n\t\tprint 'sequencia %d: %s' % (i,entrada)\n\n\n",
+      "name": "imprimeseq.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "85c3f15bf7250abc49f857475d5a1d64",
+  "iid": 6248360910520320,
+  "activity_revision": "1.0.3"
+}

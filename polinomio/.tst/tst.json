@@ -1,0 +1,14 @@
+{
+  "files": {
+    "polinomio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Aplica\u00e7\u00e3o Polin\u00f4mios\n\n\nlista = []\ndef polinomio(entrada2 , x):\n\tsoma = 0\n\tfor i in range(len(entrada2)-1,0,-1):\n\t\tresultado =  int(entrada2[i]) * x ** (i -1)\n\t\tsoma += resultado\n\treturn soma\n\t\nwhile True:\n\tentrada = raw_input()\n\tif entrada == 'fim':\n\t\tbreak\n\tif entrada[0] == 'p':\n\t\tlista.append('novo polinomio')\n\t\tentrada2 = entrada.split()\n\telse:\n\t\tx = int(entrada)\n\t\tlista.append(polinomio(entrada2 , x))\n\t\t\nfor i in lista:\n\tprint i\n",
+      "name": "polinomio.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6450a1284b8617190a5740b142754d4b",
+  "iid": 5809623290347520,
+  "activity_revision": "1.0.1"
+}

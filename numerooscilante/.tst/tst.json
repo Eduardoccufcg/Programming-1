@@ -1,0 +1,14 @@
+{
+  "files": {
+    "numerooscilantes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: N\u00fameros Oscilantes\n\n\ncodigo = int(raw_input())\ncodigo = str(codigo)\n\nfor d in range(len(codigo) -1 ):\n\tcodigo_1 = True\n\tif int(codigo[d]) % 2 == int(codigo[d+1]) % 2:\n\t\tcodigo_1 = False\n\t\tbreak\nif codigo_1 == True:\n\tprint'verdadeiro: %d algarismos.' % len(str(codigo))\nelse:\n\tprint'falso: %d algarismos.' % len(str(codigo))\n",
+      "name": "numerooscilantes.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fc47f502501193a8adb6bf9eb164a677",
+  "iid": 5843557155864576,
+  "activity_revision": "1.1.1"
+}

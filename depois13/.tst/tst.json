@@ -1,0 +1,18 @@
+{
+  "files": {
+    "depois13.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Depois do 13 Nada\n\nn1 = int(raw_input())\nn2 = int(raw_input())\nn3 = int(raw_input())\n\nif n1 != 13 and n2 != 13 and n3 != 13:\n\tsoma = n1 + n2 + n3\n\tif soma == 13:\n\t\tsoma = 0\nelif n1 == 13 and n2 != 13 and n3 != 13 or n3 == 13:\n\tsoma = 0\nelif n1 != 13 and n2 == 13 and n3 != 13 or n3 == 13:\n\tsoma = n1\n\tif soma ==13:\n\t\tsoma = 0\nif n1 != 13 and n2 != 13 and n3 == 13:\n\tsoma =  n1 + n2\n\tif soma == 13:\n\t\tsoma = 0\n\nprint soma\n",
+      "name": "depois13.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 107.55,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3f93b77d3db0ea335f72d80c3a64dd9b",
+  "iid": 5784092394127360,
+  "activity_revision": "1.1.3"
+}

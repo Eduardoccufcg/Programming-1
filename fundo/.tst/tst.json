@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 62.27,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "fundo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Fundo de Investimento\n\nmedia = 0\nsoma = 0\ncontador = 0\n\n\nwhile True:\n\tcontador += 1\n\tvalor = float(raw_input())\n\tif valor < media:\n\t\tbreak\n\tsoma += valor\n\tmedia = soma / contador\nprint'Saldo total do FIS: R$%.2f.' % soma\t\nprint'M\u00e9dia das contribui\u00e7\u00f5es: R$%.2f.' % (soma /(contador - 1))\n",
+      "name": "fundo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b196f140616f6d6f41aed378f29dc8e6",
+  "iid": 6373836031262720,
+  "activity_revision": "1.0.1"
+}

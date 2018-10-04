@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_digitos_verificacao = getattr(undertest, 'calcula_digitos_verificacao', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_digitos_verificacao('153245875') == '40'\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "cpf.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: D\u00edgito de verificacao CPF\n\nentrada = ''\ndef calcula_digitos_verificacao(entrada):\n\tsoma = 0\n\tfor i in range(len(entrada) -1 ,-1,-1):\n\t\tmulti = (len(entrada) - i + 1) * int(entrada[i])\n\t\tsoma += multi\n\tdigito = str(soma * 10 % 11)\n\tif digito == '10':\n\t\tdigito = '0'\n\tentrada2 = entrada + str(digito)\n\tsoma2 = 0\n\tfor i in range(len(entrada2) -1 ,-1,-1):\n\t\tmulti2 = (len(entrada) - i + 2) * int(entrada2[i])\n\t\tsoma2 += multi2\n\tdigito2 = str(soma2 * 10 % 11)\n\tif digito2 == '10':\n\t\tdigito2 = '0'\n\treturn(digito + digito2)\n\n",
+      "name": "cpf.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3b24a81e547d8123873d19ea74f39d84",
+  "iid": 5234899489390592,
+  "activity_revision": "1.0.1"
+}

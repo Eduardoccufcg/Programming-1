@@ -1,0 +1,12 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "iid": 5221826145812480,
+  "kind": "assignment",
+  "activity_revision": "1.0.1",
+  "name": null
+}

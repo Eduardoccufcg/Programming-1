@@ -1,0 +1,14 @@
+{
+  "files": {
+    "testewhile.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Bingo\n\n\ncartela1 = raw_input()\ncartela2 = raw_input()\nsorteio1 = 0\nsorteio2 = 0\nwhile sorteio1 < 4 and sorteio2 < 4:\n\tnumero_sorteado = raw_input()\n\tfor d in range(len(cartela1)):\n\t\tif numero_sorteado == cartela1[d]:\n\t\t\tsorteio1 +=1\n\t\tif numero_sorteado == cartela2[d]:\n\t\t\tsorteio2 += 1\n\t\t\t\nif sorteio1 < sorteio2:\n\tprint'Bingo! Jogador 2 venceu.'\n\t\nelif sorteio1 > sorteio2:\n\tprint'Bingo! Jogador 1 venceu.'\nelse:\n\tprint'Empate.'\n\t\t\n",
+      "name": "testewhile.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fde4b8dafe17bdb8a21d7826dcb0e6c7",
+  "iid": 4651483681259520,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "pa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: PA\n\nfor i in range(4,3004,3):\n\tprint i\n",
+      "name": "pa.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 3,\n      \"vhalstead\": 0.0,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "46945d188296f1d43243c0daaa55da64",
+  "iid": 5226749319184384,
+  "activity_revision": "1.0.1"
+}

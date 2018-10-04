@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmaior_palavra = getattr(undertest, 'maior_palavra', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert maior_palavra(\"eu acredito que seja um bom exemplo\") == \"acredito\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "maiorpalavra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Maior Palavra de Uma frase\n\n\ndef maior_palavra(frase):\n\t\n\tpalavra_maior = ''\n\tpalavra = ''\n\n\tfor i in frase:\n\t\tif i != ' ':\n\t\t\tpalavra += i\n\t\telse:\n\t\t\tif len(palavra_maior) <= len(palavra):\n\t\t\t\tpalavra_maior = palavra\n\t\t\tpalavra = ''\n\tif len(palavra_maior) <= len(palavra):\n\t\t\t\tpalavra_maior = palavra\n\treturn palavra_maior\n",
+      "name": "maiorpalavra.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bb4e6f1e479a319861c8fdd2b7f9b547",
+  "iid": 5785630797725696,
+  "activity_revision": "1.0.0"
+}

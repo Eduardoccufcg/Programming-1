@@ -1,0 +1,18 @@
+{
+  "files": {
+    "grep.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Grep\ni = 0\npalavra = raw_input()\nn = int(raw_input())\n\nfor u in range(n):\n\tfrase = raw_input()\n\tfor d in frase:\n\t\tif  d == palavra[i]:\n\t\t\ti +=1\n\t\t\tif i == len(palavra):\n\t\t\t\tprint frase\n\t\t\t\ti = 0\n\t\telse:\n\t\t\ti = 0\n\n",
+      "name": "grep.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 4.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "73e18d3a13683c99bc7fdd0d16ded40c",
+  "iid": 5889222724550656,
+  "activity_revision": "2.0.1"
+}

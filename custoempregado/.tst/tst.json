@@ -1,0 +1,18 @@
+{
+  "files": {
+    "custoempregado.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Custo Empregado\n\nsalario = float(raw_input())\ndias = int(raw_input())\ncusto_transporte_diario = float(raw_input())\n\n# custo empregador\n\ninss_empregador = salario * 0.08\nfgts_empregador = salario * 0.12\ncusto_transporte = dias * custo_transporte_diario\nif custo_transporte > salario * 0.06:\n\tcusto_transporte_empregador = custo_transporte - salario * 0.06\n\tcusto_transporte_empregado = salario * 0.06\nelse:\n\tcusto_transporte_empregador = 0\n\tcusto_transporte_empregado = 0\ncusto_empregador = inss_empregador + fgts_empregador + custo_transporte_empregador + salario\n# custo empregado\nif salario <= 1317.07:\n\tinss_empregado = salario * 0.08\nelif 1317.07 < salario <= 2195.12:\n\tinss_empregado = salario * 0.09\nelse:\n\tinss_empregado = salario * 0.11\nsalario_liquido = salario - inss_empregado - custo_transporte_empregado\nprint'O sal\u00e1rio base \u00e9 R$ %.2f' % salario\nprint'O custo mensal para o empregador \u00e9 de R$ %.2f' % custo_empregador\nprint'O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f' % salario_liquido\n",
+      "name": "custoempregado.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 20,\n      \"vhalstead\": 351.03,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fd60ac42ccf6055b20026a55f4ca32c0",
+  "iid": 5887334281117696,
+  "activity_revision": "1.0.2"
+}

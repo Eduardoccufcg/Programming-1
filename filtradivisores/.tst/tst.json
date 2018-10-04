@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_divisores = getattr(undertest, 'filtra_divisores', None)\n\nclass PublicTests(unittest.TestCase):\n\n\n   def test_exemplo(self):\n       lista1 = [333, 121, 81]\n       assert filtra_divisores(lista1) == None\n       assert lista1 == [333,81]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "filtradivisores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Seleciona Divisores em uma Lista\n\n\ndef filtra_divisores(lista):\n\tfor j in range(len(lista) -1 ,-1,-1):\n\t\tsomatorio = 0\n\t\td = str(lista[j])\n\t\tfor i in d:\n\t\t\tsomatorio += int(i)\n\t\tif  lista[j] % somatorio != 0:\n\t\t\tlista.pop(j)\n",
+      "name": "filtradivisores.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7e74a58c8cc1119b4f98e6764e115656",
+  "iid": 5209313027031040,
+  "activity_revision": "1.0.0"
+}

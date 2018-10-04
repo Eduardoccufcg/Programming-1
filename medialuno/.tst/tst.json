@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mediaaluno.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Mediaaluno\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\n\nnota_1 = float(raw_input())\nnota_2 = float(raw_input())\nnota_3 = float(raw_input())\nnota_ponderada_final = float(((nota_1 * 2.0) + (nota_2 * 3.0) + (nota_3 * 5.0)) / 10.0)\nprint nota_ponderada_final\n\n",
+      "name": "mediaaluno.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bde75f0078e4a456b1f6cd5e376db94e",
+  "iid": 6195776996769792,
+  "activity_revision": "1.1.1"
+}

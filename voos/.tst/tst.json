@@ -1,0 +1,18 @@
+{
+  "files": {
+    "voo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Autoriza\u00e7\u00e3o_voos\nsoma = 0\nvoos = 0\n\ntempo_disponivel = int(raw_input())\nnumero_avioes = int(raw_input())\n\nlista = []\nfor i in range(numero_avioes):\n\t\ttempo_aviao = int(raw_input())\n\t\tlista.append(tempo_aviao)\nfor d in lista:\n\tif d <= tempo_disponivel:\n\t\tsoma += d\n\t\tif soma <= tempo_disponivel:\n\t\t\tvoos += 1\nprint'%d voo(s) autorizados.' % voos\n\t \n",
+      "name": "voo.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "62d9a06fb81f4fec1f3f06f05bc2df71",
+  "iid": 6075733357101056,
+  "activity_revision": "1.1.4"
+}

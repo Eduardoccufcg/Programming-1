@@ -1,0 +1,14 @@
+{
+  "files": {
+    "areacilindro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\nimport math\nprint'C\u00e1lculo da Superf\u00edcie de um Cilindro'\nprint'---'\nmedida_diametro = float(raw_input('Medida do di\u00e2metro? '))\nmedida_altura = float(raw_input('Medida da altura? '))\nraio = float (medida_diametro / 2)\narea = float ((2 * math.pi * raio) * (raio + medida_altura))\nprint'---'\nprint'\u00c1rea calculada: %.2f' % area\n\n\n",
+      "name": "areacilindro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e46df69cb686d9c81377c191809702ef",
+  "iid": 5741338611941376,
+  "activity_revision": "1.1.0"
+}

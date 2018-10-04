@@ -1,0 +1,18 @@
+{
+  "files": {
+    "espacovirgula.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Espa\u00e7o por virgula\n\n\nfrase_final = ''\n\nfrase = raw_input()\ni = int(raw_input())\nj = int(raw_input())\n\nfor d in range(i, j):\n\tif d != (j - 1):\n\t\tif frase[d] != ' ':\n\t\t\tfrase_final += '%s '%frase[d]\n\t\telif frase[d] == ' ':\n\t\t\tfrase_final+= ', '\n\telif d == (j - 1):\n\t\tif frase[d] != ' ':\n\t\t\tfrase_final += '%s'%frase[d]\n\t\telif frase[d] == ' ': \n\t\t\tfrase_final += ','\t\n\t\nprint frase_final\n\t\n",
+      "name": "espacovirgula.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 120.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6f8605705ff643d780bf736cd6f54c49",
+  "iid": 5785225527296000,
+  "activity_revision": "1.1.4"
+}

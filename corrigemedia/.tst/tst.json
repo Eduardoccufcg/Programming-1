@@ -1,0 +1,14 @@
+{
+  "files": {
+    "corrigemedia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# C\u00e1lculo da m\u00e9dia em \u00c1lgebra Vetorial\n# Eduardo Pereira, Porgrama\u00e7\u00e3o 1, UFCG, 2017.2\nnota1 = 10\nnota2 = 5\nmedia = float(nota1 + nota2) / 2\nprint \"Nota 1: %4.1f\" % nota1\nprint \"Nota 2: %4.1f\" % nota2\nprint \"M\u00e9dia : %4.1f\" % media\n",
+      "name": "corrigemedia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6c2e863beadecdb952e90e49a46dd131",
+  "iid": 5806862633009152,
+  "activity_revision": "1.1.0"
+}

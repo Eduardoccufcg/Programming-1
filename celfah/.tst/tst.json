@@ -1,0 +1,14 @@
+{
+  "files": {
+    "celfah.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Convers\u00e3o de temperaturas\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\n\ntemp_celsius = float(raw_input())\nconversao_fahrenheit = float((temp_celsius * 1.8) +32)\nprint conversao_fahrenheit\n",
+      "name": "celfah.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "89fa483b821bac702817327c19416157",
+  "iid": 5186513126031360,
+  "activity_revision": "1.1.8"
+}

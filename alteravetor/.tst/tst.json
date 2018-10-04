@@ -1,0 +1,19 @@
+{
+  "files": {
+    "alteravetor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Altera Vetor Por Escalar\n\ndef altera_vetor_por_escalar(vetor, escalar):\n\tfor d in range(len(vetor)):\n\t\tvetor[d] *= escalar\n",
+      "name": "alteravetor.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\naltera_vetor_por_escalar = getattr(undertest, 'altera_vetor_por_escalar', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_adicional_1(self):\n       vetor_1 = [1, 2, 3]\n       assert altera_vetor_por_escalar(vetor_1, -1) == None\n       assert vetor_1 == [-1, -2, -3]\n       assert altera_vetor_por_escalar(vetor_1, 2) == None\n       assert vetor_1 == [-2, -4, -6]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b581a55b585774520019cdd0c0dd2110",
+  "iid": 5853510608355328,
+  "activity_revision": "2.0.2"
+}

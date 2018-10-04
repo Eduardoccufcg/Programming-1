@@ -1,0 +1,19 @@
+{
+  "files": {
+    "somadiminui.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Soma e diminui vizinhos\n\nlista = [1,2,3]\n\ndef soma_diminui_vizinhos(lista):\n\tresultado = 0\n\tfor i in range(len(lista)):\n\t\tif i == 0:\n\t\t\tresultado += lista[i]\n\t\telif i % 2 == 0:\n\t\t\tresultado -= lista[i]\n\t\telse:\n\t\t\tresultado += lista[i]\n\t\n\treturn resultado\n\t\t\n\t\t\n",
+      "name": "somadiminui.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\nimport unittest\nimport sys\nimport imp\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        lista = [1,2,3]\n        assert soma_diminui_vizinhos(lista) == 0\n\n    def test_vazio(self):\n        lista = []\n        assert soma_diminui_vizinhos(lista) == 0\n\n\nif __name__ == '__main__':\n\n    undertest = imp.load_source(\"undertest\", sys.argv[-1])\n    soma_diminui_vizinhos = undertest.soma_diminui_vizinhos\n    del sys.argv[-1]\n    unittest.main()\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "555334b7d257bffef256570026f60ce0",
+  "iid": 6084259605381120,
+  "activity_revision": "4.0.1"
+}

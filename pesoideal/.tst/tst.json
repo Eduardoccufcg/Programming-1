@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pesoideal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Peso Ideal com Fun\u00e7\u00e3o\n\ndef calculaPeso(sexo,altura):\n\t\tif sexo == 'f' or sexo == 'F':\n\t\t\tpesoideal = 62.1 * altura - 44.7 \n\t\t\tprint'Mulher: peso ideal \u00e9 %.1f' % pesoideal\n\t\tif sexo == 'm' or sexo == 'M':\n\t\t\tpesoideal = 72.7 * altura - 58.0\n\t\t\tprint'Homem: peso ideal \u00e9 %.1f' % pesoideal\n\nwhile True:\t\n\tentrada = raw_input().split()\n\tif entrada[0] == '****':\n\t\tbreak\n\tsexo = entrada[0]\n\taltura = float(entrada[1])\n\tcalculaPeso(sexo,altura)\n",
+      "name": "pesoideal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "84801c2bbe99c65e39b931f409ba3f0d",
+  "iid": 5282052928700416,
+  "activity_revision": "1.0.5"
+}

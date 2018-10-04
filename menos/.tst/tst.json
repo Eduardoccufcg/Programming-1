@@ -1,0 +1,18 @@
+{
+  "files": {
+    "acertou.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Quem acertou menos\n\naluno_que_errou_mais = 0\nmaior_erro = 0\nerros = 0\naluno = 1\nn_resultados = int(raw_input())\n\nfor i in range(n_resultados):\n\tresultado_aluno = raw_input()\n\tfor d in resultado_aluno:\n\t\tif d == 'f':\n\t\t\terros += 1\n\t\n\tif erros > maior_erro:\n\t\tmaior_erro = erros\n\t\taluno_que_errou_mais = aluno\n\terros = 0\n\taluno += 1\nprint 'O aluno %d errou %d teste(s).' % (aluno_que_errou_mais,maior_erro)\n\t\t\n\n\n\n\n",
+      "name": "acertou.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 13,\n      \"vhalstead\": 53.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "048584cf7e7922408fa3e1574bdf43fc",
+  "iid": 5994181323390976,
+  "activity_revision": "1.0.1"
+}

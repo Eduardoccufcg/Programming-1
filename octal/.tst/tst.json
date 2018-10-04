@@ -1,0 +1,18 @@
+{
+  "files": {
+    "octal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Octal / Decimal\n\noctal = raw_input()\n\nsoma = 0\nfor i in range(len(octal)):\n\tbit = int(octal[i])\n\texpoente = len(octal) - 1 -i \n\tbase = 8\n\tvalor = 8 ** expoente\n\ttotal = bit * valor\n\tsoma += total\n\tprint '%d * %d^%d = %d' % (bit,base,expoente,total)\n\nprint'%s(8) = %d(10)' % (octal,soma)\n",
+      "name": "octal.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "32eb3cb6e455296eec49cb38a188a528",
+  "iid": 5259863785472000,
+  "activity_revision": "1.1.2"
+}

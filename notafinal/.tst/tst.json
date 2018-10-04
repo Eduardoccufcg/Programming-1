@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mediafinal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# \u00c1rea de uma esfera\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\n\nprint'== Est\u00e1gio 1 =='\npeso1 = float(raw_input('Peso? '))\nnota1 = float(raw_input('Nota? '))\nprint '== Est\u00e1gio 2 =='\npeso2 = float(raw_input('Peso? '))\nnota2 = float(raw_input('Nota? '))\nprint '== Est\u00e1gio 3 =='\npeso3 = float(raw_input('Peso? '))\nnota3 = float(raw_input('Nota? '))\n# C\u00e1lculo da Media Parcial e Medias finais para passar\nmedia_parcial = nota1 * peso1 + nota2 * peso2 + nota3 * peso3\nmedia_para_5 = (media_parcial * 0.6 - 5.0) / 0.4 * -1\nmedia_para_7 = (media_parcial * 0.6 - 7.0) / 0.4 * -1\nprint'== Resultados =='\nprint'M\u00e9dia parcial:',media_parcial\nprint'Nota na final, pra m\u00e9dia 5.0 = %.1f' % media_para_5\nprint'Nota na final, pra m\u00e9dia 7.0 = %.1f' % media_para_7\n\n",
+      "name": "mediafinal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "21970e1450dd36a35a28318d4c8038e9",
+  "iid": 6740021293875200,
+  "activity_revision": "1.1.0"
+}

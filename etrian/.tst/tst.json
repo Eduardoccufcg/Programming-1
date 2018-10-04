@@ -1,0 +1,18 @@
+{
+  "files": {
+    "validacao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Valida\u00e7\u00e3o de Tri\u00e2ngulos\n\nlado_a = int(raw_input())\nlado_b = int(raw_input())\nlado_c = int(raw_input())\nperimetro = lado_a + lado_b + lado_c\n\nif abs(lado_b - lado_c) < lado_a < lado_b + lado_c and abs(lado_a - lado_c) < lado_b < lado_a + lado_c and abs(lado_a - lado_b) < lado_c < lado_a + lado_b:\n\tprint'triangulo valido. %d' % perimetro\nelse:\n\tprint'triangulo invalido.'\t\n\n",
+      "name": "validacao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 103.61,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "252178e3a71747182a8565587a1ef667",
+  "iid": 4957488021504000,
+  "activity_revision": "1.1.1"
+}

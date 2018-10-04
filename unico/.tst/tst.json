@@ -1,0 +1,13 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nunico = getattr(undertest, 'unico', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert unico(\"aa***xxxzzb+++\") == \"a*xzb+\"\n\n   def test_string_vazia(self):\n       assert unico(\"\") == \"\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "iid": 5834296535285760,
+  "kind": "assignment",
+  "activity_revision": "2.0.0",
+  "name": null
+}

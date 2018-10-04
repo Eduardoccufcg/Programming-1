@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncaixa_alta = getattr(undertest, 'caixa_alta', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert caixa_alta(\"A primeira letra de cada palavra\") == \"a Primeira Letra De Cada Palavra\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "alta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Caixa Alta\n\ndef caixa_alta(A):\n\tfrase = ''\n\tnova_palavra = ''\n\tlista = []\n\tnova = ''\n\tA = A + ' '\n\tfor d in range(len(A)):\n\t\tif A[d] != ' ':\n\t\t\tnova += A[d]\n\t\telse:\n\t\t\tlista.append(nova)\n\t\t\tnova = ''\n\tif len(A) == 1:\n\t\tfor i in A:\n\t\t\tnova_palavra += i.lower()\n\telse:\n\t\tfor j in range(len(lista)):\n\t\t\tnova_palavra = ''\n\t\t\tpalavra = lista[j]\n\t\t\tif len(palavra) == 1:\n\t\t\t\tnova_palavra += palavra.lower()\n\t\t\telse:\n\t\t\t\tfor h in range(len(palavra)):\n\t\t\t\t\tif h == 0:\n\t\t\t\t\t\tnova_palavra += palavra[h].upper()\n\t\t\t\t\telse:\n\t\t\t\t\t\tnova_palavra += palavra[h]\n\t\t\tif j != len(lista) - 1:\n\t\t\t\tfrase += nova_palavra + ' '\n\t\t\telse:\n\t\t\t\tfrase += nova_palavra\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\treturn frase\n\n\n",
+      "name": "alta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "38555e72b723c47e3e96443fbf202a28",
+  "iid": 5495306108010496,
+  "activity_revision": "1.0.1"
+}

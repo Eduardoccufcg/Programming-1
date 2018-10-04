@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nflip = getattr(undertest, 'flip', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = [1, 2, 3, 4, 5, 6, 7]\n        assert flip(l1, 2, 5) == None\n        assert l1 == [1, 2, 6, 5, 4, 3, 7]\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "flip.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Flip\n\nl1 = [1,2,3,4,5,6,7]\n\ndef flip(lista,i,j):\n\tfor i in range(i,j+1):\n\t\tlista[i] , lista[j] = lista[j], lista[i]\n\t\ti += 1\n\t\tj -= 1\n\t\tif j - i < 1:\n\t\t\tbreak\nassert flip(l1, 2, 5) == None\nassert l1 == [1, 2, 6, 5, 4, 3, 7]\n",
+      "name": "flip.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5fa3aba1478e400215d95b05332d7b16",
+  "iid": 5903885742899200,
+  "activity_revision": "1.0.0"
+}

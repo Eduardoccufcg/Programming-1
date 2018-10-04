@@ -1,0 +1,14 @@
+{
+  "files": {
+    "calcumedia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Calculadora de M\u00e9dias\n\n# Fun\u00e7oes Calculo de M\u00e9dias\n\ndef cal_MA(valores):\n\tsoma = 0\n\tfor i in valores:\n\t\tsoma += float(i)\n\tmedia_aritmetica = soma / len(valores)\n\treturn media_aritmetica\ndef cal_MG(valores):\n\tmulti = 1\n\tfor i in valores:\n\t\tmulti *= float(i)\n\tmedia_geometrica = multi ** (1.0 / len(valores))\n\treturn media_geometrica\ndef cal_MH(valores):\n\tsoma = 0\n\tfor d in valores:\n\t\tx = 1/ float(d)\n\t\tsoma += x\n\tmedia_harmonica = len(valores) / soma\n\treturn media_harmonica\n\nwhile True:\n\tcheck = raw_input().split()\n\tif check == ['Q']:\n\t\tbreak\n\tvalores = raw_input().split()\n\tfor i in range(len(check)):\n\t\tif check[i] == 'MA':\n\t\t\tprint'M\u00e9dia Aritm\u00e9tica: %.4f' % cal_MA(valores)\n\t\tif check[i] == 'MG':\n\t\t\tprint'M\u00e9dia Geom\u00e9trica: %.4f' % cal_MG(valores)\n\t\tif check[i] == 'MH':\n\t\t\tprint'M\u00e9dia Harm\u00f4nica: %.4f' % cal_MH(valores)\n\tprint\"----\"\n",
+      "name": "calcumedia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "76c8b61e40dc3f2048011df16454d146",
+  "iid": 5891866813792256,
+  "activity_revision": "1.0.1"
+}

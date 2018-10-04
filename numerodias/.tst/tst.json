@@ -1,0 +1,14 @@
+{
+  "files": {
+    "numerodias.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# N\u00famero de Dias\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\ndias_em_segundos = int(raw_input())\nconversao_dias = int((dias_em_segundos / 60 ** 2) / 24)\nprint conversao_dias\n",
+      "name": "numerodias.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "acc3a23c5904f8f928357aee7f9de694",
+  "iid": 4800041474588672,
+  "activity_revision": "1.1.0"
+}

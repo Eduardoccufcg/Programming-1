@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pesquisahoteis.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Pesquisa H\u00f3teis\n\nlista_valor = []\nlista_tamanho = []\nlista_conforto = []\nlista_empresa = []\nwhile True:\n\tentradas = raw_input().split(',')\n\tif entradas[0] ==  '---':\n\t\tbreak\n\telse:\n\t\tvalor, tamanho, conforto, empresa  = entradas[0], entradas[1],entradas[2], entradas[3]\n\t\tlista_valor.append(valor)\n\t\tlista_tamanho.append(tamanho)\n\t\tlista_conforto.append(conforto)\n\t\tlista_empresa.append(empresa)\n\t\t\t\nmenor = float(lista_valor[0])\nmaior = int(lista_tamanho[0])\nmaior_conforto = int(lista_conforto[0])\nwhile True:\n\tpesquisa = raw_input()\n\tif pesquisa == 'fim':\n\t\tbreak\n\telif pesquisa == 'valor':\n\t\tfor d in range(len(lista_empresa)):\n\t\t\tif float(lista_valor[d]) < menor:\n\t\t\t\tmenor -= menor\n\t\t\t\tmenor += float(lista_valor[d])\n\t\t\t\tempresa_menor = ''\n\t\t\t\tempresa_menor += lista_empresa[d]\n\t\t\telif float(lista_valor[d]) == menor:\n\t\t\t\tmenor -= menor\n\t\t\t\tmenor += float(lista_valor[d])\n\t\t\t\tempresa_menor = ''\n\t\t\t\tempresa_menor += lista_empresa[d]\n\t\t\t\t\n\t\tprint empresa_menor\n\t\t\n\telif pesquisa == 'tamanho':\n\t\tfor d in range(len(lista_empresa)):\n\t\t\tif float(lista_tamanho[d]) > maior:\n\t\t\t\tmaior -= maior\n\t\t\t\tmaior += int(lista_tamanho[d])\n\t\t\t\tempresa_maior = ''\n\t\t\t\tempresa_maior += lista_empresa[d]\n\t\t\telif float(lista_tamanho[d]) == maior:\n\t\t\t\tmaior -= maior\n\t\t\t\tmaior += int(lista_tamanho[d])\n\t\t\t\tempresa_maior = ''\n\t\t\t\tempresa_maior += lista_empresa[d]\n\t\t\t\t\n\t\tprint empresa_maior\n\t\t\n\telif pesquisa == 'conforto':\n\t\tfor d in range(len(lista_empresa)):\n\t\t\tif float(lista_conforto[d]) > maior_conforto:\n\t\t\t\tmaior_conforto -= maior_conforto\n\t\t\t\tmaior_conforto += int(lista_conforto[d])\n\t\t\t\tempresa_maior_conforto = ''\n\t\t\t\tempresa_maior_conforto += lista_empresa[d]\n\t\t\t\t\n\t\t\telif float(lista_conforto[d]) == maior_conforto:\n\t\t\t\tmaior_conforto -= maior_conforto\n\t\t\t\tmaior_conforto += int(lista_conforto[d])\n\t\t\t\tempresa_maior_conforto = ''\n\t\t\t\tempresa_maior_conforto += lista_empresa[d]\n\t\tprint empresa_maior_conforto\n\n",
+      "name": "pesquisahoteis.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "713b4a7e49ac63b7983f538c3c87e1a7",
+  "iid": 6185542785957888,
+  "activity_revision": "1.0.2"
+}

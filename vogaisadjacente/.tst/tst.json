@@ -1,0 +1,14 @@
+{
+  "files": {
+    "vogaisadj.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Tem Vogais Adjacentes\n\ndef tem_vogais_adjacentes(palavra):\n\tvogais = 'aeiouAEIOU'\n\ttem_vogais_adjacentes = False\n\tfor d in range(len(palavra) -1 ):\n\t\tif palavra[d] in vogais and palavra[d+1] in vogais:\n\t\t\ttem_vogais_adjacentes = True\n\tif tem_vogais_adjacentes == True:\n\t\treturn'sim'\n\telse:\n\t\treturn'nao'\npalavra = raw_input()\nprint tem_vogais_adjacentes(palavra)\n",
+      "name": "vogaisadj.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "62d7fc93e5777b1cdee914015a978c4f",
+  "iid": 5838878996955136,
+  "activity_revision": "1.0.0"
+}

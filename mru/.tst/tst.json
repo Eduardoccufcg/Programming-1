@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mru.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\n\nkilometro_sO = float(raw_input())\nvelocidade = float(raw_input())\ntempo = float(raw_input())\n\ns_instante_t = float(kilometro_sO + (velocidade * tempo))\nprint'%.2f' % s_instante_t\n",
+      "name": "mru.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2322bd02b9e643a7f50854ddd7bb7da7",
+  "iid": 5552711944634368,
+  "activity_revision": "1.1.1"
+}

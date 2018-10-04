@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 127.44,\n      \"header\": 1\n    }\n  ]\n}"
+    },
+    "bissexto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Ano Bissexto\n\nano = int(raw_input())\n\nif ano % 400 == 0 or ano % 4 == 0 and ano % 100 != 0:\n\tprint'%d \u00e9 bissexto' % ano\nelse:\n\tprint'%d n\u00e3o \u00e9 bissexto' % ano\n",
+      "name": "bissexto.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3e80f5ebebcc3db2308eafa1bab4c017",
+  "iid": 5854457380208640,
+  "activity_revision": "1.1.2"
+}

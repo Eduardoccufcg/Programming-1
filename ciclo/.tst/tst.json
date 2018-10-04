@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 165.67,\n      \"header\": 4\n    }\n  ]\n}"
+    },
+    "ciclo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Ciclo trigonom\u00e9trico\n\na = float(raw_input())\t\n\nif a <= 360:\n\tif a >= 1 and a <= 89:\n\t\tprint 'Quadrante 1' \n\telif a == 0 or a == 90:\n\t\tprint 'Sobre eixos'\n\telif a > 90 and a < 180:\n\t\tprint 'Quadrante 2'\n\telif a == 180:\n\t\tprint 'Sobre eixos'\n\telif a > 180 and a < 270:\n\t\tprint 'Quadrante 3'\n\telif a == 270:\n\t\tprint 'Sobre eixos'\n\telif a > 270 and a < 360:\n\t\tprint 'Quadrante 4'\n\telif a == 360:\n\t\tprint 'Sobre eixos'\nif a > 360:\n\tnum2 = a % 360\n\tif num2 >= 1 and num2 <= 89:\n\t\tprint 'Quadrante 1'\n\telif num2 == 0 or num2 == 90:\n\t\tprint 'Sobre eixos'\n\telif num2 > 90 and num2 < 180:\n\t\tprint 'Quadrante 2'\n\telif num2 == 180:\n\t\tprint 'Sobre eixos'\n\telif num2 > 180 and num2 < 270:\n\t\tprint 'Quadrante 3'\n\telif num2 == 270:\n\t\tprint 'Sobre eixos'\n\telif num2 > 270 and num2 < 360:\n\t\tprint 'Quadrante 4'\n\telif num2 == 360:\n\t\tprint 'Sobre eixos'\t\n",
+      "name": "ciclo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d89ae07892a8f60581f5914076bd5038",
+  "iid": 5560569746685952,
+  "activity_revision": "1.0.3"
+}

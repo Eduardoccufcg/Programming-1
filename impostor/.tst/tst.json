@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninsere_ordenado_impostor = getattr(undertest, 'insere_ordenado_impostor', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l = [1, 2, 4, 3, 5, 6, 7, 11]\n        insere_ordenado_impostor(l)\n        assert l == [1, 2, 3, 4, 5, 6, 7, 11]\n\n    def test_ex2(self):\n        l = [1, 9, 11, 3, 14]\n        insere_ordenado_impostor(l)\n        assert l == [1, 3, 9, 11, 14]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "impostor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Insere Ordenado Impostor\n\n\ndef insere_ordenado_impostor(lista):\n\te = 0\n\twhile True:\n\t\tfor i in range(len(lista)-1):\n\t\t\tif lista[i] > lista[i+1]:\n\t\t\t\tlista[i], lista[i+1] = lista[i+1], lista[i]\t\t\n\t\tfor d in range(len(lista)-1):\n\t\t\tif lista[d] < lista[d+1]:\n\t\t\t\te += 1\n\t\tif e == len(lista) -1:\n\t\t\tbreak\n\t\te = 0\n\t\n",
+      "name": "impostor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "98a5ea6f0a193116683cfe1087c81a49",
+  "iid": 5906061949140992,
+  "activity_revision": "1.0.7"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 147.16,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "sisemasvendas.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Sistema de Metas de Venda Mensal\n\nvenda_mensal = float(raw_input())\nmeta_mensal = venda_mensal / 6\n\nsoma = 0\nlista_vendas = []\nmeta_nao_atingida = 0\nfor vendas in range(6):\n\tvendas_funcionarios = float(raw_input())\n\tsoma += vendas_funcionarios\n\tif vendas_funcionarios >= meta_mensal:\n\t\tlista_vendas.append(vendas_funcionarios)\n\telse:\n\t\tmeta_nao_atingida += 1\n\n\nif meta_nao_atingida == 0:\n\tprint'Total de vendas: R$ %.2f (meta atingida)' % soma\n\tprint'----'\n\tprint'Bonifica\u00e7\u00e3o:'\n\tfor d in range(len(lista_vendas)):\n\t\tprint'Funcion\u00e1rio %d: R$ %.2f' % (d+1,lista_vendas[d] * 0.01)\nelse:\t\n\tprint'Total de vendas: R$ %.2f (meta n\u00e3o foi atingida)' % soma\n\tprint'----'\n\n\t\n\n\t\t\t\n\t\t\n",
+      "name": "sisemasvendas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "997ba7c4af9f85e739afab11426fc7d2",
+  "iid": 5964109036126208,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "calculoseguro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Calculo de seguro\n\ndef calcula_seguro(valor,lista):\n\tidade = lista[0]\n\tcasado = lista[1]\n\tarea_risco = lista[2]\n\tportao = lista[3]\n\timovel = lista[4]\n\tcasa_propria = lista[5]\n\tveiculo = lista[6]\n\t\n\tpontuacao = 0\n\t# an\u00e1lise idade\n\tif idade <= 21:\n\t\tpontuacao += 20\n\telif 21 < idade <= 30:\n\t\tpontuacao += 15\n\telif 30 < idade <= 40 :\n\t\tpontuacao += 12\n\telif 40 < idade <= 60:\n\t\tpontuacao += 10\n\telif idade > 60:\n\t\tpontuacao += 20\n\t# an\u00e1lise situa\u00e7ao civil\n\tif casado == True:\n\t\tpontuacao += 10\n\telse:\n\t\tpontuacao += 20\n\t# an\u00e1lise \u00e1rea de risco\n\tif area_risco == True:\n\t\tpontuacao += 20\n\telse:\n\t\tpontuacao += 10\n\t# an\u00e1lise portao elettonico\n\tif  portao == True:\n\t\tpontuacao += 20\n\telse:\n\t\tpontuacao += 10\n\t# an\u00e1lise imovel\n\tif imovel == True:\n\t\tpontuacao += 20\n\telse:\n\t\tpontuacao += 10\n\t# an\u00e1lise casa pr\u00f3pria\n\tif casa_propria == True:\n\t\tpontuacao += 10\n\telse:\n\t\tpontuacao += 20\n\t# an\u00e1lise uso do ve\u00edculo\n\tif veiculo == 'Trabalho':\n\t\tpontuacao += 10\n\telif veiculo == 'Lazer':\n\t\tpontuacao += 20\n\telif veiculo == 'Misto':\n\t\tpontuacao += 20\n\t# an\u00e1lise de risco\n\tif pontuacao <= 80:\n\t\trisco = 'Risco Baixo'\n\telif 80 < pontuacao <= 100:\n\t\trisco = 'Risco Medio'\n\telif pontuacao > 100:\n\t\trisco = 'Risco Alto'\n\t# Valor a ser pago\n\tif risco == 'Risco Alto':\n\t\tvalor_pago = valor * 0.3\n\telif risco == 'Risco Medio':\n\t\tvalor_pago = valor * 0.2\n\telif risco == 'Risco Baixo':\n\t\tvalor_pago = valor * 0.1\n\t\t\n\treturn [pontuacao,risco,valor_pago]\n\n\n\t\n\t\n",
+      "name": "calculoseguro.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_seguro = getattr(undertest, 'calcula_seguro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_seguro(2000.0, [21, True, True, True, True, True, 'Misto']) == [120, \"Risco Alto\", 600.0]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "107d1a94c7c8e5737c97e1f4141c7ca8",
+  "iid": 6340906181459968,
+  "activity_revision": "1.0.0"
+}

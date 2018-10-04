@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nquantos_comeram = getattr(undertest, 'quantos_comeram', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        assert quantos_comeram(10, [10, 10]) == 10\n        assert quantos_comeram(12, [10, 10]) == 10\n        assert quantos_comeram(2, [10, 10]) == 0\n        assert quantos_comeram(5, [2, 3, 5]) == 5\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "comeram.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Quantos Comeram\n\ndef quantos_comeram(N,fila):\n\ti = 0\n\tvendas = 0\n\twhile True:\n\t\tif fila[i] < N:\n\t\t\tvendas += fila[i]\n\t\t\tN -= fila[i]\n\t\telif fila[i] == N:\n\t\t\tvendas += N\n\t\t\tN -= fila[i]\n\t\t\tbreak\n\t\telif fila[i] > N:\n\t\t\tbreak\n\t\ti += 1\n\treturn vendas\n",
+      "name": "comeram.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2581f4f15c7375cb10545f80d38ff3ef",
+  "iid": 5907219174391808,
+  "activity_revision": "1.0.1"
+}

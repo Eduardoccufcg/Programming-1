@@ -1,0 +1,14 @@
+{
+  "files": {
+    "analisechave.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Analisa Chave\nvogais = 'aeiou'\nsenha = raw_input()\ncont = 0\nsegura = True\nd = 0\nwhile d < (len(senha)-2):\n\tif senha[d] == senha[d+1] and senha[d] == senha[d+2]:\n\t\tprint'Chave insegura. 3 caracteres consecutivos iguais.'\n\t\tsegura = False\n\t\t\n\t\t\n\telif senha[d] in vogais:\n\t\tcont += 1\n\t\tif cont > 5:\n\t\t\tprint 'Chave insegura. %d vogais.' % cont\n\t\t\tsegura = False\n\t\t\tbreak\n\t\t\t\n\td += 1\t\t\n\t\nif segura == True:\n\tprint'Chave segura!'\n\n\t\t\n\n",
+      "name": "analisechave.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8d25f05342392a062fea8571d3f85c48",
+  "iid": 5059642879115264,
+  "activity_revision": "2.0.0"
+}

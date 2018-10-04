@@ -1,0 +1,18 @@
+{
+  "files": {
+    "caixapreta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Caixa preta\n\nn_medicoes = int(raw_input())\nvalidos = 0\nfor i in range(n_medicoes):\n\t\n\tdados = raw_input().split()\n\tachei_negativo = False\n\tpeso, combustivel, altitude = int(dados[0]),int(dados[1]),int(dados[2])\n\tif peso < 0 or combustivel < 0 or altitude < 0:\n\t\tachei_negativo = True\n\t\t\t\n\tif peso >= 0:\n\t\tvalidos += 1\n\telse:\n\t\tachei_negativo = True\n\t\tprint 'dado inconsistente. peso negativo.'\n\t\tbreak\n\tif combustivel >= 0:\n\t\tvalidos += 1\n\telse:\n\t\tachei_negativo = True\n\t\tprint 'dado inconsistente. combust\u00edvel negativo.'\n\t\tbreak\n\tif altitude >= 0:\n\t\tvalidos += 1\n\telse:\n\t\tachei_negativo = True\n\t\tprint 'dado inconsistente. altitude negativa.'\n\t\tbreak\nprint '%i dados v\u00e1lidos.' % validos\n",
+      "name": "caixapreta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 117.21,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "027ea23e23920799005e14a36a6de975",
+  "iid": 5320703876268032,
+  "activity_revision": "1.0.2"
+}

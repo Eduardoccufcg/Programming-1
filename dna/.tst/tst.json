@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: DNA\n\nsequencia1 = raw_input()\nsequencia2 = raw_input()\nsequencia3 = raw_input()\n\nif len(sequencia1) == len(sequencia2) and len(sequencia1) < len(sequencia3) and len(sequencia2) < len(sequencia3):\n\tprint sequencia1 , len(sequencia1)\nelif len(sequencia1) == len(sequencia3) and len(sequencia1) < len(sequencia2) and len(sequencia3) < len(sequencia2):\n\tprint sequencia1 , len(sequencia1)\nelif len(sequencia2) == len(sequencia3) and len(sequencia2) < len(sequencia1) and len(sequencia3) < len(sequencia1): \n\tprint sequencia2 , len(sequencia2)\nelif len(sequencia1) == len(sequencia2) and len(sequencia3) == len(sequencia2):\n\tprint sequencia1, len(sequencia1)\n\nelif len(sequencia1) < len(sequencia2) and len(sequencia1) < len(sequencia3):\n\tprint sequencia1, len(sequencia1)\nelif len(sequencia2) < len(sequencia1) and len(sequencia2) < len(sequencia3):\n\tprint sequencia2, len(sequencia2)\nelif len(sequencia3) < len(sequencia1) and len(sequencia3) < len(sequencia2):\n\tprint sequencia3 , len(sequencia3)\n\n\n\n",
+      "name": "dna.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "818033aba1fadf358da65c9169a2e347",
+  "iid": 5046200705220608,
+  "activity_revision": "1.1.3"
+}

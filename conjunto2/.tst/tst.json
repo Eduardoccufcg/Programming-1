@@ -1,0 +1,18 @@
+{
+  "files": {
+    "conjunto2.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Conjunto com mais elementos\n\n\nelementos = 0\nlista_q_elementos = []\nwhile True:\n\tnumeros = raw_input()\n\tif numeros == 'fim':\n\t\tbreak\n\tif int(numeros) >= 0:\n\t\telementos += 1\n\telse:\n\t\tlista_q_elementos.append(elementos)\n\t\telementos = 0\ncontador = 0\nmaior = 0\nif lista_q_elementos != []:\n\tfor i in range(len(lista_q_elementos)):\n\t\tif int(lista_q_elementos[i]) > maior:\n\t\t\tmaior = int(lista_q_elementos[i])\n\t\t\t\n\tfor d in range(len(lista_q_elementos)):\n\t\tif lista_q_elementos[d] == maior:\n\t\t\tbreak\n\t\telse:\n\t\t\tcontador += 1\n\t\t\n\tprint'Conjunto %d - %d elemento(s)' % (contador+1,maior)\n",
+      "name": "conjunto2.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7844baebdf4fcc7a97df40f35585e88f",
+  "iid": 5221826145812480,
+  "activity_revision": "1.0.1"
+}

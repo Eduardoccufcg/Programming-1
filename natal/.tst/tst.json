@@ -1,0 +1,14 @@
+{
+  "files": {
+    "arvorenatal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: arvore de natal\n\naltura_arvore = int(raw_input())\nnum_espacos = altura_arvore - 1\nmultiplica = 1\nfor c in range(altura_arvore):\n\tarvore = multiplica * 'o'\n\tprint num_espacos * ' ' + arvore\n\tnum_espacos -=1\n\tmultiplica +=2\nprint (altura_arvore-1) * ' ' + 'o'\n",
+      "name": "arvorenatal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7b298a2b63845aeaf9ed4502fd2c7649",
+  "iid": 6245584012836864,
+  "activity_revision": "1.0.0"
+}

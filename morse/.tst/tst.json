@@ -1,0 +1,18 @@
+{
+  "files": {
+    "morse.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Tradutor Morse\nlista = []\ndef tradutor_morse(lista):\n\ttraducao = ''\n\tfor d in range(len(lista)):\n\t\tif lista[d] == '.-':\n\t\t\ttraducao += 'a'\n\t\telif lista[d] == '-...':\n\t\t\ttraducao += 'b'\t\n\t\telif lista[d] == '-.-.':\n\t\t\ttraducao += 'c'\t\n\t\telif lista[d] == '-..':\n\t\t\ttraducao += 'd'\t\n\t\telif lista[d] == '.':\n\t\t\ttraducao += 'e'\t\n\t\telif lista[d] == '..-.':\n\t\t\ttraducao += 'f'\t\n\t\telif lista[d] == '--.':\n\t\t\ttraducao += 'g'\n\t\telif lista[d] == '....':\n\t\t\ttraducao += 'h'\t\n\t\telif lista[d] == '..':\n\t\t\ttraducao += 'i'\t\n\t\telif lista[d] == '.---':\n\t\t\ttraducao += 'j'\n\t\telif lista[d] == '-.-':\n\t\t\ttraducao += 'k'\n\t\telif lista[d] == '.-..':\n\t\t\ttraducao += 'l'\n\t\telif lista[d] == '--':\n\t\t\ttraducao += 'm'\t\n\t\telif lista[d] == '-.':\n\t\t\ttraducao += 'n'\t\n\t\telif lista[d] == '---':\n\t\t\ttraducao += 'o'\t\n\t\telif lista[d] == '.--.':\n\t\t\ttraducao += 'p'\t\n\t\telif lista[d] == '--.-':\n\t\t\ttraducao += 'q'\t\n\t\telif lista[d] == '.-.':\n\t\t\ttraducao += 'r'\n\t\telif lista[d] == '...':\n\t\t\ttraducao += 's'\t\n\t\telif lista[d] == '-':\n\t\t\ttraducao += 't'\t\n\t\telif lista[d] == '..-':\n\t\t\ttraducao += 'u'\n\t\telif lista[d] == '...-':\n\t\t\ttraducao += 'v'\t\t\n\t\telif lista[d] == '.--':\n\t\t\ttraducao += 'w'\t\t\n\t\telif lista[d] == '-..-':\n\t\t\ttraducao += 'x'\t\t\n\t\telif lista[d] == '-.--':\n\t\t\ttraducao += 'y'\t\t\n\t\telif lista[d] == '--..':\n\t\t\ttraducao += 'z'\t\t\n\treturn traducao\n\n\t\t\t\n",
+      "name": "morse.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ntradutor_morse = getattr(undertest, 'tradutor_morse', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n       assert tradutor_morse(['.--.', '-.--', '-', '....', '---', '-.']) == 'python'\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b9072eaba59af1cd192b190dcfe53da7",
+  "iid": 5877943066689536,
+  "activity_revision": "1.0.0"
+}

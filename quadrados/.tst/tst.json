@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "quadrados.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Tabela de quadrados\n\nx = int(raw_input())\ny = int(raw_input())\n\nif x > y:\n\tprint \"---\"\nelse:\n\tfor i in range(x,y + 1):\n\t\tprint i, i ** 2\n\t\n",
+      "name": "quadrados.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "679f3344d2a89cdd95f6bccc79a8d60f",
+  "iid": 5816594089377792,
+  "activity_revision": "1.0.1"
+}

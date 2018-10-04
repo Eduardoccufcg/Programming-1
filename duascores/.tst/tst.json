@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsepara_duas_cores = getattr(undertest, 'separa_duas_cores', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['a', 'a', 'b', 'a', 'b']\n        assert separa_duas_cores(l1, 'b', 'a') == None\n        assert l1 == [ 'b', 'b', 'a', 'a', 'a']\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "duascores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Organiza Array com duas cores\n\n\n\n\n\ndef separa_duas_cores(l1,cor1,cor2):\n\tj = 0\n\tfor i in range(len(l1)):\n\t\tif l1[i] == cor1:\n\t\t\tl1[i],l1[j] = l1[j],l1[i]\n\t\t\tj += 1\n",
+      "name": "duascores.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d80aa42b06e6948aa97aad918c243a78",
+  "iid": 5240772051861504,
+  "activity_revision": "1.0.2"
+}

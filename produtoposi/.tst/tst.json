@@ -1,0 +1,18 @@
+{
+  "files": {
+    "produto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Produto de dois somat\u00f3rios\n\nnumero = raw_input()\nsoma_par = 0\nsoma_impar = 0\nfor c in range(len(numero)):\n\tif c == 2 or c == 4 or c == 0:\n\t\tsoma_par += int(numero[c])\n\t\t\n\telse:\n\t\tsoma_impar += int(numero[c])\n\nproduto = soma_par * soma_impar\n\nif len(str(produto)) == 1:\n\tprint '0000'+str(produto)\nelif len(str(produto)) == 2:\n\tprint '000'+str(produto)\nelif len(str(produto)) == 3:\n\tprint '00'+str(produto)\nelif len(str(produto)) == 4:\n\tprint '0'+str(produto)\t\n\n\n",
+      "name": "produto.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 1,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "10aefa96ccf2e8a55d3419826046845a",
+  "iid": 5803187751616512,
+  "activity_revision": "1.0.1"
+}

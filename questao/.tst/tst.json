@@ -1,0 +1,14 @@
+{
+  "files": {
+    "campanha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Campanha\n\n\nderrotas = 0\nempate = 0\npontos_casa = 0\npontos_fora = 0\nsaldo_contra = 0\nsaldo_pro = 0\nvitorias = 0\nfor i in range(0, 10):\n    placar = raw_input()\n    if placar[5] == 'c':\n        if int(placar[0]) > int(placar[2]):\n            pontos_casa += 3\n            vitorias += 1\n            saldo_pro += int(placar[0])\n            saldo_contra += int(placar[2])\n        elif int(placar[0]) == int(placar[2]):\n            pontos_casa += 1\n            empate += 1\n            saldo_pro += int(placar[0])\n            saldo_contra += int(placar[2])\n        else:\n            derrotas += 1\n            saldo_pro += int(placar[0])\n            saldo_contra += int(placar[2])\n    else:\n        if int(placar[0]) < int(placar[2]):\n            pontos_fora += 3\n            vitorias += 1\n            saldo_pro += int(placar[2])\n            saldo_contra += int(placar[0])\n        elif int(placar[0]) == int(placar[2]):\n            pontos_fora += 1\n            empate += 1\n            saldo_pro += int(placar[2])\n            saldo_contra += int(placar[0])\n        else:\n            derrotas += 1\n            saldo_pro += int(placar[2])\n            saldo_contra += int(placar[0])\n\nsaldo = saldo_pro - saldo_contra\npontos = pontos_casa + pontos_fora\n\nprint '%dv, %de, %dd' % (vitorias, empate, derrotas)\nprint 'pontos: %d' % pontos\nprint 'saldo: %d (%d pro, %d contra)' % (saldo, saldo_pro, saldo_contra)\nprint 'pontos em casa: %d' % pontos_casa\nprint 'pontos fora: %d' % pontos_fora\n",
+      "name": "campanha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "de08ba1c097a03132d25a99dda4f2967",
+  "iid": 5277309405757440,
+  "activity_revision": "1.0.1"
+}

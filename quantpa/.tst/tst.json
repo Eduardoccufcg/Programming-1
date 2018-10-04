@@ -1,0 +1,18 @@
+{
+  "files": {
+    "quantpa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Quantas PAs\nquantas_pa = 0\nn = 0\nrazao = int(raw_input())\n\nwhile True:\n\tseq = raw_input()\n\tseqs = seq.split()\n\tif seq == 'fim':\n\t\tbreak\n\tfor d in range(len(seqs) -1):\n\t\tif int(seqs[d +1]) - int(seqs[d]) == razao:\n\t\t\tn += 1\n\tif n == len(seqs) -1:\n\t\tquantas_pa += 1\n\tn = 0\n\t\t\nprint quantas_pa\n",
+      "name": "quantpa.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 15,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e4e64dfa41d82054088d96142f7b6547",
+  "iid": 4965072195551232,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "trauma.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Hospital de Trauma\n\ndef cadastra(fila, nome, prioridade):\n\tj = 0\n\tfor d in range(len(prioridade)):\n\t\ttroca = False\n\t\tfor i in range(0,len(fila)):\n\t\t\tif fila[i] == prioridade[d]:\n\t\t\t\tnome[i],nome[j] = nome[j], nome[i]\n\t\t\t\tj += 1\n\t\t\t\ttroca = True\n\t\tif not troca:\n\t\t\tbreak\n\treturn nome\n\ndef resumo(fila):\n\tcont_vermelho = 0\n\tcont_laranja = 0\n\tcont_amarelo = 0\n\tcont_verde = 0\n\tcont_azul = 0\n\tfor i in range(len(fila)):\n\t\tif fila[i] == 'vermelho':\n\t\t\tcont_vermelho += 1\n\t\telif fila[i] == 'laranja':\n\t\t\tcont_laranja += 1\n\t\telif fila[i] == 'amarelo':\n\t\t\tcont_amarelo += 1\n\t\telif fila[i] == 'verde':\n\t\t\tcont_verde += 1\n\t\telif fila[i] == 'azul':\n\t\t\tcont_azul += 1\n\tlista = [cont_vermelho, cont_laranja,cont_amarelo,cont_verde,cont_azul]\n\treturn lista\t\t\n\n\n\t\t\t\nfila = []\nnome = []\nprioridade = ['vermelho', 'laranja', 'amarelo', 'verde', 'azul']\n\nwhile True:\n\tpacientes = raw_input().split()\n\tif pacientes == ['fim']:\n\t\tbreak\n\tfila.append(pacientes[1])\n\tnome.append(pacientes[0])\nfor i in cadastra(fila,nome,prioridade):\n\tprint i\nprint'---'\nfor i in range(len(resumo(fila))):\n\tprint '%s: %d' % (prioridade[i],resumo(fila)[i])\nprint'---'\n\n",
+      "name": "trauma.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "599e80f147a4d53ff9c50b420011fbb2",
+  "iid": 5259264570425344,
+  "activity_revision": "1.0.1"
+}

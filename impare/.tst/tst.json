@@ -1,0 +1,18 @@
+{
+  "files": {
+    "somaultimos.py": {
+      "category": "answer",
+      "data": "# coding: utf -8\n# Soma dos ultimos \u00edmpares\n# Eduardo Pereira dos Santos / Programa\u00e7\u00e3o 1 / Matricula: 117210342\n\nn_quantidades = int(raw_input())\nlimite = int(raw_input())\n\nlista_numero = []\nfor d in range(n_quantidades):\n\tnumeros_sequencia = int(raw_input())\n\tlista_numero.append(numeros_sequencia)\n\nsoma = 0\t\nfor numero in range(len(lista_numero)-1,-1,-1):\n\tif lista_numero[numero] % 2 != 0:\n\t\tif soma + lista_numero[numero] < limite:\n\t\t\tsoma += lista_numero[numero]\n\t\telse:\n\t\t\tbreak\nprint soma\n\n\t\n\t\t\n\t\t\n\n\t\n",
+      "name": "somaultimos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 70.32,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c546ad9fc0947ba0f91bc99005f0d2e0",
+  "iid": 6315822834253824,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,7 @@
+# coding: utf-8
+# Aluno: Eduardo Pereira
+# Matricula: 117210342
+# Atividade: Calculo de seguro
+
+def calcula_seguro(valor,[idade,situacao_civil,area_risco,portao,imovel,casa_propria,veiculo]):
+

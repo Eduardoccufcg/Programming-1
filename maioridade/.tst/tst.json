@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmaioridade_penal = getattr(undertest, 'maioridade_penal', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico_1(self):\n        assert maioridade_penal(\"Jansen Italo Ana\",\"14 21 60\") == \"Italo Ana\"\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "maioridade.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Maioridade Penal Fun\u00e7\u00e3o\n\ndef maioridade_penal(string1,string2):\n\tstring1 = string1.split()\n\tstring2 = string2.split()\n\tstring_nova = ''\n\tfor d in range(len(string2)):\n\t\tif int(string2[d]) >= 18:\n\t\t\tif d+1 < len(string2):\n\t\t\t\tstring_nova += string1[d] + ' '\n\t\t\telse:\n\t\t\t\tstring_nova += string1[d]\n\t\t\n\treturn string_nova\n\n",
+      "name": "maioridade.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6e9c8b05e5604836bdb54e7a971048d5",
+  "iid": 6372382184833024,
+  "activity_revision": "1.0.0"
+}

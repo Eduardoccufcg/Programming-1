@@ -1,0 +1,18 @@
+{
+  "files": {
+    "transporte.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Transporte modificado\n\nn_pessoas = int(raw_input())\nvalor_em_reais = float(raw_input())\n\nif valor_em_reais < 22:\n\tprint'N\u00e3o \u00e9 poss\u00edvel realizar a viagem.'\nelse: \n\tvalor_por_pessoa = valor_em_reais / n_pessoas\n\tif valor_por_pessoa < 22:\n\t   print'N\u00e3o \u00e9 poss\u00edvel realizar a viagem.'\n\telse:\n\t\tcusto_tav = 100 * n_pessoas\n\t\tcusto_onibus = 22 * n_pessoas\n\t\tif n_pessoas % 4 == 0:\n\t\t\tcusto_taxi = 200 * (n_pessoas / 4)\n\t\telse:\n\t\t\tcusto_taxi = 200 * (n_pessoas / 4) + 200\n\t\n\t\tif custo_tav <= valor_em_reais:\n\t\t\tprint'TAV. R$ %.2f' % custo_tav\n\t\telif custo_taxi <= valor_em_reais:\n\t\t\tprint'T\u00e1xi. R$ %.2f' % custo_taxi\n\t\telse: \n\t\t\tprint'\u00d4nibus. R$ %.2f' % custo_onibus\n\n",
+      "name": "transporte.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 122.62,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "987115cf5157d409073ff17ded414195",
+  "iid": 5806707477315584,
+  "activity_revision": "1.0.2"
+}

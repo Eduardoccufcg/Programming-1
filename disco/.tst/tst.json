@@ -1,0 +1,14 @@
+{
+  "files": {
+    "disco.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Espa\u00e7o em disco\n# (C) 2017.2, Eduardo Pereira / UFCG, Programa\u00e7\u00e3o 1\n\nprimeiro_usuario = raw_input()\nbytes_ocupados1 = float(raw_input())\nsegundo_usuario = raw_input()\nbytes_ocupados2 = float(raw_input())\nterceiro_usuario = raw_input()\nbytes_ocupados3 = float(raw_input())\nbytes1_em_mb = float(bytes_ocupados1 / 1024 ** 2)\nbytes2_em_mb = float(bytes_ocupados2 / 1024 ** 2)\nbytes3_em_mb = float(bytes_ocupados3 / 1024 ** 2)\nespaco_total = float(bytes1_em_mb + bytes2_em_mb + bytes3_em_mb)\nespaco_medio = float((bytes1_em_mb + bytes2_em_mb + bytes3_em_mb) / 3)\n\nprint'SPLab - Espa\u00e7o utilizado pelos usu\u00e1rios'\nprint'---------------------------------------------'\nprint'Nr., Usu\u00e1rio, Espa\u00e7o Utilizado'\n\nprint'\\n1, %s, %3.2f MB' % (primeiro_usuario, bytes1_em_mb)\nprint'2, %s, %3.2f MB' % (segundo_usuario, bytes2_em_mb)\nprint'3, %s, %3.2f MB' % (terceiro_usuario, bytes3_em_mb)\n\nprint'\\nEspa\u00e7o total ocupado: %3.2f MB' % espaco_total\nprint'Espa\u00e7o m\u00e9dio ocupado: %3.2f MB' % espaco_medio\n\n",
+      "name": "disco.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7099785d1322e57bc6315ddc5fb2ff83",
+  "iid": 5863099592605696,
+  "activity_revision": "1.1.0"
+}

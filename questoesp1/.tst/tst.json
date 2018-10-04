@@ -1,0 +1,18 @@
+{
+  "files": {
+    "questoesp1.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Quest\u00f5es para P1\nsoma_total = 0\ncontador = 0\nlista_nomes = []\nlista_soma = []\nsoma = 0\nwhile True:\n\tentrada = raw_input()\n\tcontador += 1\n\tif entrada == '**':\n\t\tbreak\n\tif entrada == '*':\n\t\tlista_soma.append(soma)\n\t\tsoma = 0\n\t\tcontador = 0\n\tif contador == 1:\n\t\tlista_nomes.append(entrada)\n\telif contador > 1:\n\t\tsoma_total += int(entrada)\n\t\tsoma += int(entrada)\nprint'Relat\u00f3rio de novas quest\u00f5es:'\nprint\t\t\t\nfor i in range(len(lista_nomes)):\n\tprint'%s: %d' % (lista_nomes[i],lista_soma[i])\t\nprint'---'\nprint'Total de novas quest\u00f5es: %d' % soma_total\n",
+      "name": "questoesp1.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a40f9aa1cf0cbba578eeb5c26ff6f0a5",
+  "iid": 5323950066237440,
+  "activity_revision": "1.0.3"
+}

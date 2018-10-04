@@ -1,0 +1,18 @@
+{
+  "files": {
+    "teorema.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Teorema de Herao\n\nimport math\n\nn = int(raw_input())\nsoma = 0\nmaiores = 0\narea_de_comparacao = 100.00\n\nlistaarea = []\nfor i in range(n):\n\tlados = raw_input().split()\n\ta,b,c = float(lados[0]),float(lados[1]),float(lados[2])\n\ts = (a + b + c) / 2\n\tarea = math.sqrt((s * (s-a)) * (s-b) * (s-c))\n\tlistaarea.append(area)\n\tif area > area_de_comparacao:\n\t\tmaiores += 1\n\t\tsoma += area\nfor d in range(len(listaarea)):\n\t\n\tprint '\u00c1rea %s: %.2f' % (d+1,listaarea[d])\n\t\nif maiores != 0:\n\tprint'N\u00famero maiores: %d, \u00e1rea m\u00e9dia: %.2f' % (maiores , soma / maiores)\n\n\n\t\n\n",
+      "name": "teorema.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 230.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "62a5fdc2b9cc19b7f762128e5d6080bc",
+  "iid": 6347598076051456,
+  "activity_revision": "1.2.0"
+}

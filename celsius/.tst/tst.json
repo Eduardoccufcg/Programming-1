@@ -1,0 +1,14 @@
+{
+  "files": {
+    "temperatura.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Entrada de Dados\nF = float(raw_input())\nC = float((F-32) * 5/9)\nK = float (C + 273.15)\nprint'Fahrenheit:',\"%.3f\" % F, 'F'\nprint'Celsius:',\"%.3f\" % C ,'C'\nprint'Kelvin:',\"%.3f\" % K ,'K'\n\n\n",
+      "name": "temperatura.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e1725bc417e4f0afe31a7e673f8aa7f1",
+  "iid": 5415851226300416,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "semiguais.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Remove Palavras com Letras Iguais Consecutivas\n\n\ndef remove_consecutivas(lista):\n\tfor i in range(len(lista) -1 ,-1,-1):\n\t\ttem_consecutivas = False\n\t\tfor d in range(len(lista[i]) - 1):\n\t\t\tif lista[i][d] == lista[i][d+1] or lista[i][d] == lista[i][d+1].lower() or lista[i][d] == lista[i][d+1].upper() :\n\t\t\t\ttem_consecutivas = True\n\t\tif tem_consecutivas == True:\n\t\t\tlista.pop(i)\n",
+      "name": "semiguais.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nremove_consecutivas= getattr(undertest, 'remove_consecutivas', None)\n\nclass PublicTests(unittest.TestCase):\n \n   def test_do_enunciado(self):\n       lista1 = ['arara', 'tv',   'bacia']\n       assert remove_consecutivas(lista1) == None\n       assert lista1 == ['arara', 'tv',  'bacia']\n\n   def test_do_enunciado_1(self):\n       lista1 = ['arara', 'arroba',   'bacia']\n       assert remove_consecutivas(lista1) == None\n       assert lista1 == ['arara', 'bacia']\n \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__])) \n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bd2e60570ff8663c15360d6879680d86",
+  "iid": 5843663993176064,
+  "activity_revision": "2.0.1"
+}

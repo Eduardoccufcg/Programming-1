@@ -1,0 +1,14 @@
+{
+  "files": {
+    "passagemaerea.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\ndistancia_milhas = float(raw_input())\naliquota = float(raw_input())\nvalor_passagem = float((distancia_milhas * aliquota) + 51.00)\nopcao1 = float(valor_passagem * 0.75)\nopcao2 = float(valor_passagem * 0.95)\nopcao2_parce = float(opcao2 / 6)\nprint'Valor da passagem: R$ %.2f' % valor_passagem\nprint'\\nPagamento:'\nprint'1. \u00c0 vista. R$ %.2f' % opcao1\nprint'2. Em 6 parcelas. Total: R$ %.2f' % opcao2\nprint'   6 x R$ %.2f' % opcao2_parce\nprint'3. Em 10 parcelas. Total: R$ %.2f' % valor_passagem\nprint'   10 x R$ %.2f' % (valor_passagem / 10 )\n\n",
+      "name": "passagemaerea.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "26a658c50df18d1e9f85d2d69ed04ee0",
+  "iid": 5762411038507008,
+  "activity_revision": "1.1.0"
+}

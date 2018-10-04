@@ -1,0 +1,18 @@
+{
+  "files": {
+    "lucromensal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: lucro mensal\nlista_lucro = []\n\nmeses = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez']\n\nfor d in range(12):\n\tvalores = raw_input().split()\n\treceita, despesa = float(valores[0]), float(valores[1])\n\tlucro = receita - despesa\n\tlista_lucro.append(lucro)\n\t\t\nfor i in range(len(meses)):\n\tif lista_lucro[i] < 0:\n\t\tprint meses[i],lista_lucro[i]\n\telse:\n\t\tprint meses[i],'',lista_lucro[i]\n\t\n",
+      "name": "lucromensal.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cbe2570170f4b3871702c525556b9822",
+  "iid": 4902792284078080,
+  "activity_revision": "1.1.1"
+}

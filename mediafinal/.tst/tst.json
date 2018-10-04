@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mediafinal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# media final\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\n\nnota_1 = float(raw_input())\nnota_2 = float(raw_input())\npeso_1 = 60\npeso_2 = 40\nmedia_final = ((nota_1 * peso_1) + (nota_2 * peso_2)) / (peso_1 + peso_2)\nprint 'M\u00e9dia final: %.1f' % media_final\n",
+      "name": "mediafinal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "796c78df88ae79905dbe8346de8c7f0b",
+  "iid": 4514609759256576,
+  "activity_revision": "1.0.1"
+}

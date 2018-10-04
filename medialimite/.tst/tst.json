@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 17,\n      \"vhalstead\": 98.1,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "medialimite.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: m\u00e9dia_atinge_limite\n\nlista = []\nwhile True:\n\tsequencia = raw_input()\n\tif sequencia == '-':\n\t\tbreak\n\tlista.append(sequencia)\n\t\nlimite_media = float(raw_input())\nmedia = 0\nn_termos = 0\nsoma = 0\nfor i in range(len(lista)):\n\tif media < limite_media:\n\t\tn_termos += 1\n\t\tsoma += float(lista[i])\n\t\tmedia = soma / n_termos\t\n\nif media <= limite_media:\n\n\tprint'limite n\u00e3o alcan\u00e7ado'\nelse:\n\tprint'media = %.1f' % media\n\tprint'num = %d' % n_termos\n\n",
+      "name": "medialimite.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "34bbe00811f8497b7ef4727756de2ee9",
+  "iid": 4627538835931136,
+  "activity_revision": "1.0.3"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "caixapreta5.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Caixa preta\n\npesos_validos = 0\ncombustiveis_validos = 0\naltitude_validas = 0\nvalidos = 0\n\nachei_negativo = False\n\nwhile achei_negativo == False:\n\tdados = raw_input().split()\n\tpeso, combustivel, altitude = int(dados[0]),int(dados[1]),int(dados[2])\n\tif peso < 0 or combustivel < 0 or altitude < 0:\n\t\tachei_negativo = True\n\t\t\n\tif peso >= 0:\n\t\tpesos_validos +=1\n\telse:\n\t\tprint 'dado inconsistente. peso negativo.'\n\t\tachei_negativo = True\n\t\tbreak\n\tif combustivel >= 0:\n\t\tcombustiveis_validos += 1\n\telse:\n\t\tprint 'dado inconsistente. combust\u00edvel negativo.'\n\t\tachei_negativo = True\n\t\tbreak\n\tif altitude >= 0:\n\t\t\taltitude_validas += 1\n\telse:\n\t\tprint 'dado inconsistente. altitude negativa.'\n\t\tachei_negativo = True\n\t\tbreak\n\t\t\n\n\t\t\nprint'peso: %d' % pesos_validos\nprint'combust\u00edvel: %d' % combustiveis_validos\nprint'altitude: %d' % altitude_validas\n\n",
+      "name": "caixapreta5.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b35c7a661ebefa6e3e972e50df9ddc4f",
+  "iid": 5314192437411840,
+  "activity_revision": "1.0.1"
+}

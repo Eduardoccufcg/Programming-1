@@ -1,0 +1,14 @@
+{
+  "files": {
+    "salario.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n# (c) 2017, Eduardo Pereira, UFCG, Programa\u00e7\u00e3o 1\nsalario_bruto = float(raw_input())\nhoras_de_trabalho = int(raw_input())\nhorabruta = salario_bruto / horas_de_trabalho\ndes_ir = float(salario_bruto * 11/100)\ndes_inss = float(salario_bruto * 8/100)\ndes_sin = float(salario_bruto* 5/100)\nsalarioliqui = float(salario_bruto-des_ir-des_inss-des_sin)\nhoraliquida = float(salarioliqui / horas_de_trabalho)\nprint'Sal\u00e1rio Bruto =',salario_bruto\nprint'Hora Bruta =' ,horabruta\nprint'Desconto IR =' ,des_ir\nprint'Desconto INSS =' ,des_inss\nprint'Desconto Sindicato =',des_sin\nprint'Sal\u00e1rio L\u00edquido =',salarioliqui\nprint'Hora L\u00edquida =' ,horaliquida\n\n\n",
+      "name": "salario.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3372f3ed4ea8ee43ce9199f034d01e3e",
+  "iid": 5277087006982144,
+  "activity_revision": "1.0.3"
+}

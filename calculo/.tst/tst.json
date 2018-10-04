@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 11,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "calculadoradv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Calculadora DV\n\n\n\nnumero_de_banco = raw_input()\npares = 0\nimpares = 0\n\n\nfor i in range (0,len(numero_de_banco),2):\n\tpares += int(numero_de_banco[i])\nfor k in range(1,len(numero_de_banco),2):\t\t\n\timpares += int(numero_de_banco[k])\ndigito = impares * pares\n\t\nif digito % 11 == 10:\n\tprint'%s-X' % numero_de_banco\nelse:\n\tprint'%s-%i' % (numero_de_banco, (digito % 11))\n\t\n",
+      "name": "calculadoradv.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7c1ec181bcacb909707c49595d1de1c4",
+  "iid": 5274513784700928,
+  "activity_revision": "1.1.2"
+}

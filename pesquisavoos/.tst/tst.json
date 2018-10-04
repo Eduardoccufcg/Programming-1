@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pesquisavoos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342 / UFCG / PROGRAMA\u00c7AO 1\n# Atividade: Pesquisa Voos\n\nlista_valor = []\nlista_conexao = []\nlista_tempo = []\nlista_empresa = []\nn = int(raw_input())\nfor i in range(n):\n\tentradas = raw_input().split(',')\n\tlista_valor.append(entradas[0])\n\tlista_conexao.append(entradas[1])\n\tlista_tempo.append(entradas[2])\n\tlista_empresa.append(entradas[3])\n\ncia_valor = lista_empresa[0]\ncia_conexao = lista_empresa[0]\ncia_tempo = lista_empresa[0]\n\t\nmenor_valor = float(lista_valor[0])\nmenor_conexao = int(lista_conexao[0])\nmenor_tempo = int(lista_tempo[0])\n\nfor d in range(len(lista_empresa)):\n\t\t\n\tif menor_valor > float(lista_valor[d]):\n\t\tmenor_valor = float(lista_valor[d])\n\t\tcia_valor = lista_empresa[d]\n\t\t\n\telif menor_valor == float(lista_valor[d]):\n\t\tmenor_valor = menor_valor\n\t\tcia_valor =\tcia_valor\n\t\t\n\tif menor_conexao > int(lista_conexao[d]):\n\t\tmenor_conexao = int(lista_conexao[d])\n\t\tcia_conexao = lista_empresa[d]\n\telif menor_conexao == int(lista_conexao[d]):\n\t\tmenor_conexao = menor_conexao\n\t\tcia_conexao = cia_conexao\n\t\t\n\tif menor_tempo > int(lista_tempo[d]):\n\t\tmenor_tempo = int(lista_tempo[d])\n\t\tcia_tempo = lista_empresa[d]\n\telif menor_tempo == int(lista_tempo[d]):\n\t\tmenor_tempo = menor_tempo\n\t\tcia_tempo = cia_tempo\n\t\t\t\nwhile True:\n\tpesquisa = raw_input()\n\tif pesquisa == 'fim':\n\t\tbreak\n\telif pesquisa == 'valor':\n\t\tprint cia_valor\t\n\t\t\t\t\n\telif pesquisa == 'conex\u00f5es':\n\t\tprint cia_conexao\n\t\t\t\t\n\telif pesquisa == 'tempo':\n\t\tprint cia_tempo\n\t\n",
+      "name": "pesquisavoos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "161f1d6a59cec198e1ea633cd55915af",
+  "iid": 6650728814739456,
+  "activity_revision": "1.0.0"
+}

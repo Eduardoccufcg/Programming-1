@@ -1,0 +1,18 @@
+{
+  "files": {
+    "fatorial.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Fatorial\n\nn = int(raw_input())\n\nresultado = 1\nsoma = 0\nlista = range(1,n+1)\n\nfor x in lista:\n\tresultado = x * resultado\nprint resultado\n\n",
+      "name": "fatorial.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bc4922a0fe3d5a598dbce70966dd7750",
+  "iid": 5301256264351744,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "extremos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: extremos\n\nn_lidos = int(raw_input())\n\nlista_numeros = []\nfor c in range(n_lidos):\n\tnumeros = int(raw_input())\n\tlista_numeros.append(numeros)\nlista_extremos = []\nextremo1 = 0\nfor v in lista_numeros:\n\textremo1 += v\n\tlista_extremos.append(extremo1)\n\tbreak\nextremo2 = 0\nfor u in range(len(lista_numeros)-1,-1,-1):\n\textremo2 += lista_numeros[u]\n\tlista_extremos.append(extremo2)\n\tbreak\nmenor = lista_extremos[0]\nfor i in lista_extremos:\n\tif i < menor:\n\t\tmenor = i\nabaixo = 0\nacima = 0\nfor c in lista_numeros:\n\tif c < menor:\n\t\tabaixo += 1\n\telif c > menor:\n\t\tacima += 1\nprint 'Menor dos extremos: %d' % menor\nprint '%d n\u00famero(s) abaixo do menor' % abaixo\nprint '%d n\u00famero(s) acima do menor' % acima\n\t\t\n\n\n\n\n",
+      "name": "extremos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 79.95,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "76604ea35fbd5fe3c329f79560ad84b1",
+  "iid": 5299451304345600,
+  "activity_revision": "1.0.2"
+}

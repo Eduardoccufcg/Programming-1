@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dobro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\nnumero = int(raw_input())\nprint 2*numero\n",
+      "name": "dobro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d4affd37a3f65619b0a678034739a2bd",
+  "iid": 5145813210628096,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "areavolumees.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# \u00c1rea de uma esfera\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\n\nimport math\n\nraio = float(raw_input())\nvolume = (4 * math.pi * raio ** 3) / 3\n\nprint '%.2f' % volume\n",
+      "name": "areavolumees.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "253f7ccf093f00b2d50af69adb50861e",
+  "iid": 5830701848985600,
+  "activity_revision": "1.0.0"
+}

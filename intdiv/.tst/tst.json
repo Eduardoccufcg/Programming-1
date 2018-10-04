@@ -1,0 +1,18 @@
+{
+  "files": {
+    "intdivk.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Quantidades de Inteiros diviseis por k\n\nnumero_k = int(raw_input())\nnumero_n = int(raw_input())\nlista_inteiros = []\ne_divisivel = 0\nfor i in range(numero_n):\n\tnumeros = raw_input()\n\tlista_inteiros.append(numeros)\n\t\nfor i in lista_inteiros:\n\t\n\tif int(i) % numero_k == 0:\n\t\te_divisivel += 1\nprint'%d (%.1f%%)' % (e_divisivel,(e_divisivel * 100.0) / len(lista_inteiros))\n\t\n",
+      "name": "intdivk.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 72.0,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "11b8d26c83c22a1ad6124af487389e69",
+  "iid": 5010423090774016,
+  "activity_revision": "1.1.1"
+}

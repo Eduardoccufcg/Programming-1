@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nconta_palavras = getattr(undertest, 'conta_palavras', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert conta_palavras(5, \"zero:um:dois:tres:quatro:cinco\") == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "contapalavra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Conta Palavras\n\ndef conta_palavras(k,palavras):\n\tcont = 0\n\tpalavra = palavras.split(':')\n\tfor i in palavra:\n\t\tif len(i) >= k:\n\t\t\tcont += 1\t\n\treturn cont\n\n",
+      "name": "contapalavra.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "06f2b5f65e525f917bd17440a27636ae",
+  "iid": 5824206583365632,
+  "activity_revision": "1.0.0"
+}

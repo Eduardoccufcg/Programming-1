@@ -1,0 +1,19 @@
+{
+  "files": {
+    "lanche.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Lanche mais pedido\n\n\ndef lanchemaispedido(dados):\n\tfor i in range(len(dados)):\n\t\td = i\n\t\tj = 0\n\t\tif dados[i] == dados[d]:\n\t\t\tdados[i],dados[j] = dados[j], dados[i]\n\t\t\tj += 1\n\tcont = 0\t\n\tfor i in dados:\n\t\tif i == dados[0]:\n\t\t\tcont += 1\n\n\tif cont > len(dados) / 2:\n\t\treturn dados[0]\n",
+      "name": "lanche.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nlanchemaispedido = getattr(undertest, 'lanchemaispedido', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo_1(self):\n    ines = ['tapioca','tapioca','salada','bolo','misto','tapioca', 'tapioca']\n    assert lanchemaispedido(ines) == 'tapioca'\n    \n\n   def test_exemplo_2(self):\n       marcos = ['suco','coxinha','suco','misto','folhado']\n       assert lanchemaispedido(marcos) == None\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d08115dcf81e9f1aa7865ca605d350aa",
+  "iid": 5905330730958848,
+  "activity_revision": "1.0.3"
+}

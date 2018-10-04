@@ -1,0 +1,14 @@
+{
+  "files": {
+    "zinicial.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Z Inicial\n\ndef z_inicial(lista):\n\tcont_z = 0\n\tfor d in range(len(lista)):\n\t\tif lista[d][0] == 'z' or lista[d][0] == 'Z':\n\t\t\tcont_z += 1\n\treturn cont_z\n\t\nnomes = raw_input().split()\nprint(z_inicial(nomes))\n",
+      "name": "zinicial.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "692f9d4a62925d17a27b14a9c9d85272",
+  "iid": 5785783537500160,
+  "activity_revision": "1.0.0"
+}

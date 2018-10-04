@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limpeza.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Limpeza\n\ndef meu_replace(a,b):\n\tnova = ''\n\tlista = []\n\ttotal_string = ''\n\tfor i in total2:\n\t\tif i != a:\n\t\t\tnova += i\n\t\telse:\n\t\t\tlista.append(nova)\n\t\t\tnova = ''\n\tlista += nova\n\tfor i in range(len(lista)):\n\t\tif  i != len(lista) -1:\n\t\t\ttotal_string += lista[i] + b\n\t\telse:\n\t\t\ttotal_string += lista[i] + '0'\n\treturn total_string \t\n\n\nservico = int(raw_input())\n# fossa\nif servico == 1:\n\tmetro = int(raw_input())\n\ttotal = metro * 80.00\n\ttotal2 = str(total)\n\t\n\tprint'R$ %s' % meu_replace('.',',')\n\tif total >= 200.00:\n\t\tprint'Brinde!'\n# caixa d'agua\nelif servico == 2:\n\tmetro = int(raw_input())\n\ttotal = metro * 50.00\n\ttotal2 = str(total)\n\t\n\tprint'R$ %s' % meu_replace('.',',')\n\tif total >= 200.00:\n\t\tprint'Brinde!'\n# caixa_de_esgoto\nelif servico == 3:\n\tprint'R$ 50,00'\n\t\n",
+      "name": "limpeza.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 66.61,\n      \"header\": 2\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "242e9f91635dfa4bb2591ba668eb07de",
+  "iid": 5876020800389120,
+  "activity_revision": "1.0.3"
+}

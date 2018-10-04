@@ -1,0 +1,14 @@
+{
+  "files": {
+    "maioremenor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Maiores e Menores\n\nlista_menores = []\nlista_maiores = []\n\npivot = int(raw_input())\n\nwhile True:\n\tnumero = int(raw_input())\n\tif numero < 0:\n\t\tbreak\n\tif numero <= pivot:\n\t\tlista_menores.append(numero)\n\telse:\n\t\tlista_maiores.append(numero)\n\nprint lista_menores\nprint pivot\nprint lista_maiores\n",
+      "name": "maioremenor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ab589ac90d06dc29cea2b58a2ba1be2a",
+  "iid": 5806150540853248,
+  "activity_revision": "1.0.1"
+}

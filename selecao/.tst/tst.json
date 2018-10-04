@@ -1,0 +1,18 @@
+{
+  "files": {
+    "selecaopro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Sele\u00e7\u00e3o Projeto\n\nCRE_candidato = float(raw_input())\nexperiencia_em_meses = float(raw_input())\nnota_entrevista = float(raw_input())\n\nif CRE_candidato < 7 and experiencia_em_meses < 6:\n\tprint'Candidato eliminado. CRE e experi\u00eancia abaixo do limite.'\nelif CRE_candidato < 7:\n\tprint'Candidato eliminado. CRE abaixo do limite.'\nelif experiencia_em_meses < 6:\n\tprint'Candidato eliminado. Experi\u00eancia abaixo do limite.'\nif CRE_candidato >= 7 and experiencia_em_meses >= 6:\n\tif nota_entrevista <= 3:\n\t\tprint'Candidato classificado.'\n\telif nota_entrevista > 3:\n\t\tprint'Candidato aprovado.'\n",
+      "name": "selecaopro.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 36.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "57ae2435bf7fda85233087b998456bde",
+  "iid": 5879669844869120,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "masterylearning.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Mastery Learning\nprint 'Mastery Learning'\nprint 'C\u00e1lculo da nota na unidade'\nprint\nnota1 = float(raw_input('Nota? '))\nnota2 = float(raw_input('Nota? '))\nmedia_parcial  = (nota1 + nota2) / 2\npenalizacao = 0.0\nif nota1 > nota2:\n\tmenor = nota1\n\tmaior = nota2\nelif nota2 > nota1:\n\tmaior = nota2\n\tmenor = nota1\n\n\nwhile True:\n\tif media_parcial >= 6.5:\n\t\tprint'M\u00e9dia: %.1f (aprovado)' % media_parcial\n\t\tprint'Penaliza\u00e7\u00e3o: %.1f' % penalizacao\n\t\tbreak\n\telse:\n\t\tprint'M\u00e9dia: %.1f (cursando)' % media_parcial\n\t\tprint'Penaliza\u00e7\u00e3o: %.1f' % penalizacao\n\t\tprint\t\n\tnota = float(raw_input('Nota? '))\n\tpenalizacao += 0.5\n\tif nota > menor:\n\t\tmenor = nota\n\t\tmedia_parcial =  (menor + maior) / 2\nprint\t\nprint'==='\t\nprint'Notas v\u00e1lidas: %.1f e %.1f' % (menor, maior)\nprint'M\u00e9dia parcial na unidade: %.1f' % media_parcial\t\t\t\nprint'Penaliza\u00e7\u00f5es: %.1f' % penalizacao\nprint'M\u00e9dia final na unidade: %.1f' % (media_parcial - penalizacao)\n",
+      "name": "masterylearning.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 30,\n      \"vhalstead\": 267.35,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e6928444ab6513e5a4876cb5947e1fae",
+  "iid": 5271006205706240,
+  "activity_revision": "1.0.3"
+}

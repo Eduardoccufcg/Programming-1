@@ -1,0 +1,13 @@
+{
+  "files": {
+    "campanha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Campanha\n\nlista_gols1 =[]\nlista_gols2 =[]\n\nfor i in range(10):\n\tplacar = raw_input()\n\tlista_gols1.append(placar[0])\n\tlista_gols2.append(placar[2])\n\n#Campinense\ngols_casa = 0\ngols_fora = 0\nderrota = 0\nvitoria_casa = 0\nvitoria_fora = 0\nempate_fora = 0\nempate_casa = 0\nfor i in range(0,len(lista_gols1),2):\n\tgols_casa += int(lista_gols1[i])\n\tif int(lista_gols1[i]) > int(lista_gols2[i]):\n\t\tvitoria_casa += 1\n\telif int(lista_gols1[i]) < int(lista_gols2[i]):\n\t\tderrota += 1\n\telse:\n\t\tempate_casa += 1\nfor d in range(1,len(lista_gols2),2):\n\tgols_fora += int(lista_gols2[d])\n\tif int(lista_gols2[d]) > int(lista_gols1[d]):\n\t\tvitoria_fora += 1\n\telif int(lista_gols2[d]) < int(lista_gols1[d]):\n\t\tderrota += 1\n\telse:\n\t\tempate_fora += 1\n#Adversario\n\ngolsadv_fora = 0\ngolsadv_casa = 0\nfor casaad in range(1,len(lista_gols1),2):\n\tgolsadv_fora += int(lista_gols1[casaad])\nfor foraad in range(0,len(lista_gols2),2):\n\tgolsadv_casa += int(lista_gols2[foraad])\ngols_campinense = gols_casa + gols_fora\ngols_adversario = golsadv_casa + golsadv_fora\nsaldo = gols_campinense - gols_adversario\n\n\n\nprint'%dv, %de, %id' %((vitoria_casa + vitoria_fora),(empate_casa + empate_fora),derrota)\nprint'pontos: %d' % ((vitoria_casa + vitoria_fora) * 3 + (empate_casa + empate_fora) *1)\nprint'saldo: %d (%d pro, %d contra)'% (saldo,gols_campinense,gols_adversario)\t\t\nprint'pontos em casa: %d' % (vitoria_casa * 3 + empate_casa * 1)\nprint'pontos fora: %d' % (vitoria_fora * 3 + empate_fora *1)\n\n",
+      "name": "campanha.py"
+    }
+  },
+  "iid": 5277309405757440,
+  "kind": "assignment",
+  "activity_revision": "1.0.1",
+  "name": null
+}

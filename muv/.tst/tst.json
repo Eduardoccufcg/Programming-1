@@ -1,0 +1,14 @@
+{
+  "files": {
+    "muv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nposicao_inicial = float(raw_input('Posi\u00e7\u00e3o inicial? '))\nvelocidade_inicial = float(raw_input('Velocidade inicial? '))\ntempo = float(raw_input('Tempo? '))\naceleracao = float(raw_input('Acelera\u00e7\u00e3o? '))\nvelocidade_final = float(velocidade_inicial + (aceleracao * tempo))\nposicao_final = float (posicao_inicial + (velocidade_inicial * tempo) + ((aceleracao * tempo ** 2) / 2)) \nvelocidade_media = float(velocidade_inicial + (aceleracao * tempo) / 2) \nprint'\\nDados da quest\u00e3o'\nprint'================'\nprint '   Posi\u00e7\u00e3o inicial: %.2f m' % posicao_inicial\nprint 'Velocidade inicial: %.2f m/s' % velocidade_inicial\nprint '        Acelera\u00e7\u00e3o: %.2f m/s2' % aceleracao\nprint '             Tempo: %.2f s' % tempo\nprint '  Velocidade final: %.2f m/s' % velocidade_final\nprint '  Velocidade m\u00e9dia: %.2f m/s' % velocidade_media\nprint '     Posi\u00e7\u00e3o final: %.2f m' % posicao_final\n\n\n",
+      "name": "muv.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4baaac4f1823f88cddaf76013f380d79",
+  "iid": 5680913497194496,
+  "activity_revision": "1.1.0"
+}

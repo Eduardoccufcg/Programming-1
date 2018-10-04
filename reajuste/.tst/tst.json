@@ -1,0 +1,14 @@
+{
+  "files": {
+    "reajuste.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Percentual de Reajuste\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\nvalor_salario = float(raw_input('Valor atual? '))\nnovo_valor = float(raw_input('Novo valor? '))\nreajuste = float(((novo_valor / valor_salario ) - 1) * 100 )\nprint 'Reajuste de %.1f%%' % reajuste\n\n",
+      "name": "reajuste.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4a932b3345d70584e3cfa4bd95c105be",
+  "iid": 5683845886115840,
+  "activity_revision": "1.1.0"
+}

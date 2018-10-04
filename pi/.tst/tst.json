@@ -1,0 +1,18 @@
+{
+  "files": {
+    "pi.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Pi\n\nerro = float(raw_input())\n\npi = 1/1.0\n\npi_anterior = 4 * pi\nprint \"%.6f\" % pi_anterior\n\npos = 0\ndenominador = 3.0\nwhile True:\n\tpos += 1\n\tif pos % 2 == 0:\n\t\tpi += 1 / denominador\n\telse:\n\t\tpi -= 1 / denominador\n\tdenominador += 2.0\n\tnovo_pi = 4 * pi\n\tprint \"%.6f\" % novo_pi\n\tif abs(novo_pi -  pi_anterior) < erro:\n\t\tbreak\n\tpi_anterior = novo_pi\n",
+      "name": "pi.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 131.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4722357332ca64dfd4b3f78dab0c55b2",
+  "iid": 5795613174136832,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "binariodecimal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Convers\u00e3o binario\n\nlistabinario = [ 8,4,2,1]\nbinario = raw_input()\nsoma = 0\nfor i in range(len(binario)):\n\ta = int(binario[i]) * listabinario[i]\n\tsoma += a\n\tprint '%d * %d = %d' % (int(binario[i]) ,listabinario[i], a)\nprint '%s(2) = %d(10)' % (binario,soma)\n",
+      "name": "binariodecimal.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7bd1c625fa49b89d95b751e9b527b81d",
+  "iid": 6429081658720256,
+  "activity_revision": "1.0.4"
+}

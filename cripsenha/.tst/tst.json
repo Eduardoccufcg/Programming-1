@@ -1,0 +1,18 @@
+{
+  "files": {
+    "cripsenha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Criptografando uma senha\ntrocas = 0\npalavra_a_ser_convertida = raw_input()\npalavra_convertida = ''\npalavra_convertida += palavra_a_ser_convertida[0]\n\nfor caractere in range(1,len(palavra_a_ser_convertida)):\n\tif palavra_a_ser_convertida[caractere] == 'a' or palavra_a_ser_convertida[caractere] == 'A':\n\t\tpalavra_convertida += '4'\n\t\ttrocas += 1\n\telif palavra_a_ser_convertida[caractere] == 'e' or palavra_a_ser_convertida[caractere] == 'E':\n\t\tpalavra_convertida += '3'\n\t\ttrocas += 1\n\telif palavra_a_ser_convertida[caractere] == 'i' or palavra_a_ser_convertida[caractere] == 'I':\n\t\tpalavra_convertida += '1'\n\t\ttrocas += 1\n\telif palavra_a_ser_convertida[caractere] == 'o' or palavra_a_ser_convertida[caractere] == 'O':\n\t\tpalavra_convertida += '0'\n\t\ttrocas += 1\n\telse:\n\t\tpalavra_convertida += palavra_a_ser_convertida[caractere]\n\t\t\nprint '%s (%d troca(s))' % (palavra_convertida,trocas)\n\n",
+      "name": "cripsenha.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 230.75,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4e970e85405be862a0feda235c3ddfd0",
+  "iid": 6422173472260096,
+  "activity_revision": "1.1.1"
+}

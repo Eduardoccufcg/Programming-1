@@ -1,0 +1,14 @@
+{
+  "files": {
+    "ordem.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Ordem alfab\u00e9tica\n\ndepois = 0\nantes = 0\n\nlista = []\nn_palavras_ler = int(raw_input())\n\nfor i in range(n_palavras_ler):\n\tpalavras_sequencia = raw_input()\n\tlista.append(palavras_sequencia)\nprint'---'\npalavra_referencia = raw_input()\nfor i in range (len(lista)):\n\tif lista[i] == palavra_referencia:\n\t\tdepois -= 1\t\n\t\tdepois += 1\n\telif lista[i]> palavra_referencia:\n\t\tdepois += 1\n\telse:\n\t\tantes += 1\nprint '%d antes' % antes\nprint '%d depois' % depois\n\n\t\n",
+      "name": "ordem.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7104ea868df5422c2e309b4b0caee941",
+  "iid": 5347934774231040,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "plif.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: PlifPlof\n# Programa\u00e7\u00e3o 1 / 2017.2\n\nnumero_1 = int(raw_input())\nnumero_2 = int(raw_input())\nnumero_3 = int(raw_input())\nsoma = numero_1 + numero_2 + numero_3\n\nif soma % 3 == 0  and soma % 5 == 0:\n\tprint 'plifplof'\nelif soma % 5 == 0:\n\tprint 'plof'\nelif soma % 3 == 0:\n\tprint 'plif'\nelse:\n\tprint soma\n",
+      "name": "plif.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 137.61,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "aa2a5c580a6aa9808febca794704658e",
+  "iid": 6156694027501568,
+  "activity_revision": "1.1.2"
+}

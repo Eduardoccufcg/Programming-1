@@ -1,0 +1,18 @@
+{
+  "files": {
+    "somadivisores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Soma os Divisores do Primeiro Elemento de uma Lista\n\nlista = []\nfor i in range(11):\n\tnumero = int(raw_input())\n\tlista.append(numero)\nnumero_comparador = lista[0]\nlista = lista[1:]\nsoma = 0\nfor i in lista:\n\tif numero_comparador % i == 0:\n\t\tsoma += i\n\t\tprint soma\n\t\n",
+      "name": "somadivisores.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "daaa1d41ca880bce37b14d9a2c29ad3f",
+  "iid": 5805963776884736,
+  "activity_revision": "1.0.5"
+}

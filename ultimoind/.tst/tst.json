@@ -1,0 +1,19 @@
+{
+  "files": {
+    "ultimo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: \u00daltimo \u00cdndice\n\ndef ultimo_indice(num,lista):\n\tta_na_lista = False\n\tfor i in range(len(lista)-1,-1,-1):\n\t\tif lista[i] == num:\n\t\t\tindice = i\n\t\t\tta_na_lista = True\n\t\t\tbreak\n\tif ta_na_lista == False:\n\t\td = -1\t\t\n\telse:\n\t\td = indice\n\treturn d\n",
+      "name": "ultimo.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nultimo_indice = getattr(undertest, 'ultimo_indice', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_1(self):\n      assert ultimo_indice(2, [15,2,13,11,14,2]) == 5\n      assert ultimo_indice(42, [15,2,13,11,14,2]) == -1\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "dc0fd8f120789bff2e45b7e739c870ad",
+  "iid": 5228700777840640,
+  "activity_revision": "1.1.0"
+}

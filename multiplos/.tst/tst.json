@@ -1,0 +1,14 @@
+{
+  "files": {
+    "paresmultiplos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Descarta facilmente\n\n\n\nseq = raw_input().split()\nn = float(raw_input())\npares = []\n\nfor i in range(1, len(seq)):\n    \n    if float(seq[i]) / float(seq[i - 1]) == n:\n        pares.append('%s %s'%(seq[i - 1], seq[i]))\n        \n    if float(seq[i - 1]) / float(seq[i]) == n:\n        pares.append('%s %s'%(seq[i - 1], seq[i]))\n        \n    else:\n        pass\n        \nprint'%d par(es)' % len(pares)\n\nfor n in pares:\n    print n\n",
+      "name": "paresmultiplos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "acaf081cb51ffba1a662f6e1718a8bf7",
+  "iid": 6615653830098944,
+  "activity_revision": "1.0.1"
+}

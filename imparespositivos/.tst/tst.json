@@ -1,0 +1,18 @@
+{
+  "files": {
+    "numerospositivos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: n\u00fameros \u00edmpares positivos\n\nn = int(raw_input())\n\nfor i in range(n):\n\tif i % 2 != 0:\n\t\tprint i\n",
+      "name": "numerospositivos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 3,\n      \"vhalstead\": 0.0,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9429219c29a371794df0c07b8c348d14",
+  "iid": 6127418993541120,
+  "activity_revision": "1.1.2"
+}

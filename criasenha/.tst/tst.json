@@ -1,0 +1,14 @@
+{
+  "files": {
+    "criasenha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Cria Senha\n\n\ndef criaSenhaFraca(palavra):\n\tsenha = ''\n\tfor caractere in palavra:\n\t\tif caractere == 'o' or caractere == 'O':\n\t\t\tsenha += '0'\n\t\telif caractere == 'i' or caractere == 'I' or caractere == 'L' or caractere =='l':\n\t\t\tsenha += '1'\n\t\telif  caractere == 'e' or caractere == 'E':\n\t\t\tsenha += '3'\n\t\telif caractere == 'a' or caractere == 'A':\n\t\t\tsenha += '4'\n\t\telif caractere == 'b' or caractere == 'B':\n\t\t\tsenha += '6'\n\t\telif caractere == 't' or caractere == 'T':\n\t\t\tsenha += '7'\n\t\telse:\n\t\t\tsenha += caractere\n\treturn senha\n\nwhile True:\n\tcomando = raw_input().split()\n\tif comando == ['***']:\n\t\tbreak\n\tpalavra = comando[0]\n\tif comando[1] == 'fraco':\n\t\tprint'((%s))' % palavra\n\telse:\n\t\tprint'((%s))' % criaSenhaFraca(palavra)\n",
+      "name": "criasenha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4a680819c3537eef32a8db00789afa60",
+  "iid": 5900288439353344,
+  "activity_revision": "1.0.0"
+}

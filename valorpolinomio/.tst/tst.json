@@ -1,0 +1,19 @@
+{
+  "files": {
+    "valorpolinomio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Valor Polin\u00f4mio\n\n\ndef valor_polinomio(polinomio, valor):\t\n\tsoma = 0\n\tfor i in range(len(polinomio)-1,-1,-1):\n\t\tresultado = polinomio[i] * valor ** i\n\t\tsoma += resultado\n\treturn soma\n",
+      "name": "valorpolinomio.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nvalor_polinomio = getattr(undertest, 'valor_polinomio', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert valor_polinomio([-5, 0, 2, 0, 3], 10) == 30195\n        assert valor_polinomio([-5, 0, 2, 0, 3], 2) == 51\n        assert valor_polinomio([-5, 0, 2, 0, 3], 0) == -5\n\n    def test_basico_2(self):\n        assert valor_polinomio([3, 1], 100) == 103\n        assert valor_polinomio([3, 1], 8) == 11\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "35e80bfb83eabb8b6c3003977d73b38b",
+  "iid": 5789660282355712,
+  "activity_revision": "1.0.0"
+}

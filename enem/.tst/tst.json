@@ -1,0 +1,14 @@
+{
+  "files": {
+    "enem.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: AAprovados no Enem\n\nlista_nomes = []\nlista_notas = []\n\nwhile True:\n\tentrada = raw_input().split()\n\tif entrada == ['fim']:\n\t\tbreak\n\tnome , nota = entrada[0] , int(entrada[1])\n\tlista_nomes.append(nome)\n\tlista_notas.append(nota)\n\nnota_corte = int(raw_input())\n\nnao_aprovados = 0\nfor i in range(len(lista_nomes)):\n\tif lista_notas[i] >= nota_corte:\n\t\tprint '%s, %d' % (lista_nomes[i],lista_notas[i])\n\telse:\n\t\tnao_aprovados += 1 \n\t\t\nif nao_aprovados == len(lista_nomes):\n\tprint 'Nenhum candidato aprovado.'\n\n",
+      "name": "enem.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "560879c8777105ce2c7c49df9041b1d8",
+  "iid": 6369253838028800,
+  "activity_revision": "1.0.2"
+}

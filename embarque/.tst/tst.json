@@ -1,0 +1,14 @@
+{
+  "files": {
+    "embarqueun5.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Embarque organizado\n\npares = ''\nimpares = ''\nstring = ''\nembarque = raw_input().split()\nembarquestr = ''\n\nfor i in embarque:\n\tembarquestr += i\n\tif int(i) % 2 == 0:\n\t\tpares += i\n\telse:\n\t\timpares += i\n\t\t\nstring = impares + pares\nif embarquestr == string:\n\tprint'ok'\nelse:\n\tprint'erro'\n",
+      "name": "embarqueun5.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9726555b305d9f190422cebc0fcf4164",
+  "iid": 5542332510240768,
+  "activity_revision": "1.0.1"
+}

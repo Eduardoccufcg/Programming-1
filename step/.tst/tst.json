@@ -1,0 +1,14 @@
+{
+  "files": {
+    "step.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Um Passo do Algoritmo BubbleSort\nlista2 = []\ndef bubblesort_step(dados):\n\t\n\tfor d in range(len(dados)):\n\t\ttroca = False\n\t\tfor i in range(0,len(dados) -1):\n\t\t\tif dados[i] > dados[i+1]:\n\t\t\t\tdados[i],dados[i+1] = dados[i+1], dados[i]\n\t\t\t\ttroca = True\n\t\tif not troca:\n\t\t\tbreak\n\t\tbreak\n\tlista_sem_split = ''\n\tfor i in range(len(dados)):\n\t\tif i != len(dados) -1:\n\t\t\tlista_sem_split += str(dados[i]) + ' '\n\t\telse:\n\t\t\tlista_sem_split += str(dados[i])\n\treturn lista_sem_split\n\nlista_final = []\nwhile True:\n\tlista = raw_input().split()\n\tif lista == ['fim']:\n\t\tbreak\n\tfor i in lista:\n\t\tlista2.append(int(i))\n\tlista_final.append(bubblesort_step(lista2))\n\tlista2 = []\n\t\nfor i in lista_final:\n\tprint i\t\n",
+      "name": "step.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a0ed0f4b4a1f6ed4d55b92529d596149",
+  "iid": 5865952054870016,
+  "activity_revision": "1.0.0"
+}

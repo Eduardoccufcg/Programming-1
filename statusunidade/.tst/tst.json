@@ -1,0 +1,18 @@
+{
+  "files": {
+    "statusunidade.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Status unidade\n\nn_testes = int(raw_input())\nsoma = 0\nfor i in range(n_testes):\n\tnota = float(raw_input())\n\tsoma += nota\nmedia = soma / n_testes\n\nif media >= 6.0:\n\tprint'%.1f' % media\n\tprint'Aluno aprovado na unidade'\nelse:\n\tif n_testes > 2:\n\t\tprint'%.1f' % (media - 0.5)\n\t\tprint'Aluno ainda n\u00e3o aprovado na unidade'\n\telse:\n\t\tprint'%.1f' % media\n\t\tprint'Aluno ainda n\u00e3o aprovado na unidade'\n",
+      "name": "statusunidade.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 147.16,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "19101dcc4e918c33ee2281d6df23dbc7",
+  "iid": 5892579509927936,
+  "activity_revision": "1.0.2"
+}

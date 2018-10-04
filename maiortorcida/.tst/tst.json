@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 31.02,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "maiortorcida.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Maior Torcida\n\nlista_torcedores = []\nfor t in range(10):\n\tq_torcedores = raw_input()\n\tlista_torcedores.append(q_torcedores)\nsoma_2time = 0\nsoma_total = 0\nfor i in range(5,len(lista_torcedores)):\n\tsoma_2time += int(lista_torcedores[i])\nfor i in range(len(lista_torcedores)):\n\tsoma_total += int(lista_torcedores[i])\n\t\nsoma_1time = soma_total - soma_2time\n\nif soma_1time > soma_2time:\n\tprint'O primeiro time leva mais torcedores ao est\u00e1dio.'\nelif soma_2time > soma_1time:\n\tprint'O segundo time leva mais torcedores ao est\u00e1dio.'\nelse:\n\tprint'Empate.'\n\t\n",
+      "name": "maiortorcida.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7052bcd0f8ed747c1eb49f1be74dce5d",
+  "iid": 5574831118483456,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "letras.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Letras coincidentes\n\npalavra_1 = raw_input()\npalavra_2 = raw_input()\naspas = ''\nsoma2 = 0\n\nfor i in palavra_2:\n\tsoma2 += 1\n\nfor i in palavra_1:\n\tsoma2 +=1\nsoma = 0 \nprint'Letras coincidentes'\nfor i in range (len(palavra_1)):\n\t\n\tif palavra_1[i] == palavra_2[i]:\n\t\tsoma += 1\n\t\tprint \"'%s' na posi\u00e7\u00e3o %d\" %  (palavra_1[i],i+1)\n\t\t\nprint\"Total de letras coincidentes: %d (%.0f%%)\" % (soma, float(soma) * 100 / soma2) \n",
+      "name": "letras.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 120.4,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b66fe92985f034ccdcabd0b55f4fae08",
+  "iid": 5831369179529216,
+  "activity_revision": "1.1.2"
+}

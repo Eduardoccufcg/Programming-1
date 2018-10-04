@@ -1,0 +1,14 @@
+{
+  "files": {
+    "areaeperimetro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# \u00c1rea e per\u00edmetro de um C\u00edrculo\n# Eduardo Pereira / Programa\u00e7\u00e3o 1\nimport math\n\ndiametro = float(raw_input())\nraio = float(diametro / 2)\narea = float(math.pi * raio **2)\nperimetro = float(2 * math.pi * raio)\nprint 'A: %.5f' % area\nprint 'P: %.5f' % perimetro\n",
+      "name": "areaeperimetro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8c365a324a43e3abc0d65646de2f5b31",
+  "iid": 6678611851476992,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "absoluto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Soma e diminui vizinhos\n\n\nnumero = int(raw_input())\nprint abs(numero)\n",
+      "name": "absoluto.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "93598b50b906d44769070ef920f194c7",
+  "iid": 5803722005282816,
+  "activity_revision": "1.0.0"
+}

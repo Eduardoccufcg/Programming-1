@@ -1,0 +1,18 @@
+{
+  "files": {
+    "faltaum.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Falta um\n\ndef encontra_rotulo_perdido(l1,l2):\n\tfor i in range(len(l2)):\n\t\tfor d in range(len(l1)-1,-1,-1):\n\t\t\tif l1[d] == l2[i]:\n\t\t\t\tl1.pop(d)\n\tfor i in l1:\n\t\treturn i\n",
+      "name": "faltaum.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nencontra_rotulo_perdido = getattr(undertest, 'encontra_rotulo_perdido', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['skol', 'brahma', 'itaipava']\n        l2 = ['itaipava', 'brahma']\n        assert encontra_rotulo_perdido(l1,l2) == 'skol'\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "47300ee4f0815fef228bbb0375d1fd5c",
+  "iid": 5229687009705984,
+  "activity_revision": "1.0.0"
+}

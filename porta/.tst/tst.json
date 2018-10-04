@@ -1,0 +1,18 @@
+{
+  "files": {
+    "portaeletronica.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: Porta Eletronica\npesquisa = 0\n\nlista = []\nwhile True:\n\tentrada = raw_input().split()\n\tif entrada[0] == 'S':\n\t\tbreak\n\tif entrada[0] == 'R':\n\t\tlista.append(entrada[1])\n\telif entrada[0] == 'P':\n\t\tfor d in range(len(lista)):\n\t\t\tif lista[d][0] == entrada[1]:\n\t\t\t\tpesquisa += 1\n\t\tprint pesquisa\n\t\tpesquisa = 0\n\n",
+      "name": "portaeletronica.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 14,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a73d0cb41f6fbc49ea31ad80b06ac6f1",
+  "iid": 4941017425903616,
+  "activity_revision": "1.0.4"
+}

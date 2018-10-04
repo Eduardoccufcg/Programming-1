@@ -1,0 +1,18 @@
+{
+  "files": {
+    "elemento.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Eduardo Pereira\n# Matricula: 117210342\n# Atividade: encontrar elemento\n\nnumero = int(raw_input())\n\nsequencia = raw_input().split()\ncontador = 0\nfor i in range(len(sequencia)):\n\tif sequencia[i] == str(numero):\n\t\tcontador =+ 1\nif contador != 0:\t\t\n\tprint 'sim'\nelse:\n\tprint 'n\u00e3o'\n",
+      "name": "elemento.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 8,\n      \"vhalstead\": 4.75,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ba5e6024e2cf16716129f642988f565b",
+  "iid": 5868299455823872,
+  "activity_revision": "1.0.1"
+}
